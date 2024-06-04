@@ -1,0 +1,539 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#logo {
+    width: 180px;
+    float: left;
+    padding: 0px;
+    margin-left: 60px;
+    margin-top: 0px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    line-height: 64px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-radius: 22px;
+    transition: transform 0.6s;
+}
+
+nav ul li a:hover {
+    color: #ff004f;
+    transform: translateY(-6px);
+}
+
+.head {
+    margin: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.one {
+    color: #ff004f;
+}
+
+.o {
+    color: rgb(255, 255, 255);
+}
+
+#imgg {
+    border: 1px;
+    max-width: 25%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 200px;
+    margin-left: 100px;
+    box-shadow: 5px 5px 5px #ff004f;
+}
+
+#about {
+    margin-left: 30px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.ii {
+    letter-spacing: 6px;
+    font-size: 30px;
+}
+
+.gg {
+    font-size: 40px;
+    color: #ff004f;
+}
+
+.ooo {
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.edudiv {
+    display: flex;
+}
+
+.jj,
+.edudiv > div {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.jj {
+    padding-right: 10px;
+    transition: transform 0.6s;
+}
+
+.jj:hover {
+    transform: translateY(-10px);
+    color: #ff004f;
+    cursor: pointer;
+}
+
+.lol {
+    transition: transform 0.6s;
+}
+
+.lol:hover {
+    transform: translateY(-10px);
+    color: #ff004f;
+    cursor: pointer;
+}
+
+.edudiv > div {
+    padding-left: 10px;
+}
+
+.oooo {
+    transition: transform 0.6s;
+}
+
+.oooo:hover {
+    transform: translateY(-10px);
+    color: #ff004f;
+    cursor: pointer;
+}
+
+.oooo,
+.jj,
+.lol {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.clghat {
+    width: 130px;
+}
+
+.pppp {
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.school {
+    width: 115px;
+}
+
+.ilil {
+    font-size: 16px;
+    letter-spacing: 2.1px;
+}
+
+.experience_div {
+    display: flex;
+}
+
+.experience_div .klkl,
+.experience_div .lklk {
+    flex: 1;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.experience_div h2 {
+    margin-bottom: 10px;
+}
+
+.experience_div p {
+    margin: 5px 0;
+}
+
+.experience_div p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.klkl {
+    transition: transform 0.6s;
+}
+
+.klkl:hover {
+    transform: translateY(-10px);
+    background-color: #1c1b1b;
+    cursor: pointer;
+}
+
+.lklk {
+    transition: transform 0.6s;
+}
+
+.lklk:hover {
+    transform: translateY(-10px);
+    background-color: #1c1b1b;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-content: space-evenly;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    margin-left: 90px;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-7px);
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    letter-spacing: 2px;
+}
+
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.btn:hover {
+    background: #e10a2a;
+}
+
+.btnn2 {
+    background: #ff004f;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btnn2 {
+    cursor: pointer;
+}
+
+.btnn2:hover {
+    background: #e10a2a;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: 300px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+#msgme{
+    display: none;
+}
+
+#msg {
+    color: #268526;
+    margin-left: 240px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        width: 120px;
+        margin: 0;
+    }
+
+    #imgg {
+        max-width: 75%;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+
+    #p_head {
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+    }
+
+    #p_head2 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 60px;
+        letter-spacing: 5px;
+    }
+
+    #p_head3 {
+        text-align: center;
+        line-height: 45px;
+        letter-spacing: 4px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        transform: translateY(0px);
+        right: -200px;
+    }
+    
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s ease-in-out; /* Smooth transition for the menu */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .ooo p{
+        text-align: justify;
+        letter-spacing: -1px;
+        line-height: 25px;
+    }
+
+    .edudiv {
+        display: block;
+    }
+    .jj{
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popo{
+        font-size: 28px;
+        color: #e12c65;
+    }
+    .pppp{
+        font-size: 18px;
+    }
+
+    #ppopo{
+        margin-left: -5px;
+    }
+
+    .oooo{
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .lol{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .experience_div{
+        display: block;
+    }
+
+    .lklk{
+
+    }
+
+    .popppp{
+        color: #e12c65;
+    }
+
+    #oollllll{
+        display: block;
+    }
+
+    .ilil{
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0px;
+        font-family:'Times New Roman', Times, serif;
+
+    }
+
+    .contact-left p i {
+        font-size: 18px;
+    }
+
+    input{
+        width: 100px;
+    }
+
+    .social-icons{
+        text-align: center;
+    }
+
+    .btn.btn2 {
+        display: block;
+        background: #ff004f;
+        text-align: center;
+    }
+
+    #msgme{
+        display: block;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+    #lllllo{
+        display: none;
+    }
+
+
+    .contact-right {
+        margin-left: 0px;
+    }
+    #msg {
+        color: #268526;
+        margin-left: 60px;
+    }
+
+    .o{
+        display: inline-block;
+        margin-top: 5px;
+    }
+    
+    .qpw{
+        display: none;
+    }
+
+    .one{
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+
+}
