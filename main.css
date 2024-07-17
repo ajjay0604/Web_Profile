@@ -358,7 +358,7 @@ nav .fa-solid {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     #logo {
         width: 120px;
         margin: 0;
