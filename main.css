@@ -12,6 +12,7 @@ html {
 body {
     background-color: rgb(0, 0, 0);
     color: #ffffff;
+    
 }
 
 #logo {
@@ -29,6 +30,8 @@ body {
 .container {
     padding: 10px 10%;
 }
+
+
 
 nav {
     float: right;
@@ -68,6 +71,7 @@ nav ul li a:hover {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 5px;
+    margin-top: 45px;
 }
 
 .one {
@@ -244,6 +248,15 @@ nav ul li a:hover {
     flex-basis: 35%;
 }
 
+.o{
+    font-family: 'Courier New', Courier, monospace; /* Font style */
+    font-size: 1.8em; /* Font size */
+    color: #8d8d8d; /* Text color */
+}
+
+#ph{
+    display: none;
+}
 .contact-right {
     flex-basis: 60%;
     margin-left: 90px;
@@ -371,9 +384,15 @@ nav .fa-solid {
     }
 
     #p_head {
+        display: none;
+    }
+
+    #ph{
+        display: block;
         text-align: center;
         line-height: 30px;
-        font-size: 10px;
+        font-size: 14px;
+
     }
 
     #p_head2 {
@@ -525,6 +544,13 @@ nav .fa-solid {
     .o{
         display: inline-block;
         margin-top: 5px;
+    }
+
+    .o{
+        font-family: 'Courier New', Courier, monospace; /* Font style */
+        font-size: 1.3em; /* Font size */
+        color: #8d8d8d; /* Text color */
+        line-height: 40px;
     }
     
     .qpw{
