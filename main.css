@@ -39,12 +39,15 @@ nav {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-right: -50px;
+    
 }
 
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
+   
 }
 .comm {
     display: flex;
@@ -438,6 +441,9 @@ nav .fa-solid {
         margin: 0;
     }
 
+    nav{
+        margin-right: -10px;
+    }
     .comm {
         display: flex;
         flex-direction: column;
@@ -710,3 +716,90 @@ nav .fa-solid {
     }
 
 }
+
+
+
+
+.bodyy {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.containerexpp {
+    width: 100%;
+    max-width: 1300px;
+
+    padding: 20px;
+}
+
+.page-title h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #11a372;
+}
+
+main.rowexpp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.poqls{
+    font-size: 18px !important;
+}
+.colexpp .contentsexpp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colexpp .contentsexpp .boxexpp {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #000000c5;
+    border: 1.5px solid #bababa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.colexpp .contentsexpp .boxexpp:hover {
+    transform: scale(1.005);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+
+.boxexpp h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.boxexpp h4 {
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.boxexpp p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #dddddd;
+    text-align: justify;
+
+}
+
+@media (max-width: 768px) {
+    .boxexpp {
+        width: 100%;
+    }
+}
+
