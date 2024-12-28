@@ -574,12 +574,14 @@ nav .fa-solid {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        
         z-index: 2;
         transition: right 0.3s ease-in-out; /* Smooth transition for the menu */
     }
 
     nav ul li {
         display: block;
+        margin-bottom: -13px;
 
     }
     #serv1{
@@ -717,6 +719,9 @@ nav .fa-solid {
 
 }
 
+.brk{
+    display: block;
+}
 
 
 
@@ -783,6 +788,8 @@ main.rowexpp {
     margin-bottom: 10px;
 }
 
+
+
 .boxexpp h4 {
     font-size: 1rem;
     color: #bbbbbb;
@@ -801,5 +808,26 @@ main.rowexpp {
     .boxexpp {
         width: 100%;
     }
+
+  
+    .proj_h{
+        font-size: 1.3rem !important;
+        line-height: 35px;
+ 
+        letter-spacing: 1px;
+    }
+
+    .proj_h2{
+        
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    .brk{
+        display: none;
+    }
+    
+    
+
+    
 }
 
