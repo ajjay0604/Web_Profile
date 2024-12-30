@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -381,6 +382,8 @@ nav ul li a:hover {
     padding-top: 13px;
     padding-bottom: 13px;
 }
+
+
 
 .contact-right form {
     width: 100%;
