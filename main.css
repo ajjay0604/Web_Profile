@@ -16,8 +16,9 @@ body {
     
 }
 
+
 #logo {
-    width: 180px;
+    width: 130px;
     float: left;
     padding: 0px;
     margin-left: 30px;
@@ -29,7 +30,7 @@ body {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 0px 9%;
 }
 
 
@@ -47,7 +48,8 @@ nav {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin: 10px 10px;
+    margin: 10px 8px;
+    margin-top:-40px
    
 }
 .comm {
@@ -157,9 +159,16 @@ nav ul li a:hover {
     margin-right: 30px;
 }
 
+.iii {
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
 .ii {
     letter-spacing: 6px;
     font-size: 30px;
+     margin-top: 60px;
 }
 
 .gg {
@@ -258,10 +267,16 @@ nav ul li a:hover {
     letter-spacing: 2.1px;
 }
 
+.pqws{
+    margin-top: 25px;
+}
+
 .experience_div {
     display: flex;
 }
-
+.qqww{
+    margin-top: -50px;
+}
 .experience_div .klkl,
 .experience_div .lklk {
     flex: 1;
@@ -295,6 +310,10 @@ nav ul li a:hover {
     transform: translateY(-10px);
     background-color: #1c1b1b;
     cursor: pointer;
+}
+
+.qqww2{
+    margin-top: -90px;
 }
 
 .lklk {
@@ -424,6 +443,10 @@ form textarea {
     background: #e10a2a;
 }
 
+.llklaow{
+    display: none;
+}
+
 .copyright {
     width: 100%;
     text-align: center;
@@ -455,6 +478,7 @@ nav .fa-solid {
     #logo {
         width: 120px;
         margin: 0;
+        align-items: center;
     }
 
     nav{
@@ -547,6 +571,12 @@ nav .fa-solid {
         height: auto;
     }
     
+    .qqww{
+        display: none;
+    }
+    .qqww2{
+        display: none;
+    }
     #imgg {
         max-width: 75%;
         margin-bottom: 30px;
@@ -606,9 +636,14 @@ nav .fa-solid {
         transition: right 0.3s ease-in-out; /* Smooth transition for the menu */
     }
 
+    .pqws{
+        display: none;
+    }
+
     nav ul li {
         display: block;
-        margin-bottom: -13px;
+        margin-bottom: -22px;
+        margin-top: 8px;
 
     }
     #serv1{
@@ -618,7 +653,9 @@ nav .fa-solid {
     .pqsla{
         display: inline;
     }
-
+    .kkkkooooo{
+        display: none;
+    }
     #serv2{
         display: block;
     }
@@ -626,14 +663,19 @@ nav .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
-   
+        
         cursor: pointer;
     }
 
+    
     .ooo p{
         text-align: justify;
         letter-spacing: -1px;
         line-height: 25px;
+    }
+    
+    .ii{
+        margin-top: 0px;
     }
 
     .edudiv {
@@ -670,12 +712,13 @@ nav .fa-solid {
 
     .experience_div{
         display: block;
+       
     }
 
-    .lklk{
-
-    }
-
+   .lqperw{
+    margin-bottom: 350px;
+   }
+  
    
 
     #oollllll{
@@ -685,8 +728,8 @@ nav .fa-solid {
     .ilil{
         text-align: center;
         font-size: 15px;
-        letter-spacing: 0px;
-        font-family:'Times New Roman', Times, serif;
+        letter-spacing: 3px;
+ 
 
     }
 
@@ -696,6 +739,10 @@ nav .fa-solid {
 
     input{
         width: 100px;
+    }
+
+    .iioo{
+        margin-top: -50px;
     }
 
     #pwrs{
@@ -729,6 +776,8 @@ nav .fa-solid {
         color: #268526;
         margin-left: 60px;
     }
+
+
 
     .o{
         display: inline-block;
@@ -767,6 +816,18 @@ nav .fa-solid {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.bodyyy{
+    width: 100%;
+    
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -350px;
     font-family: 'Arial', sans-serif;
     color: #ffffff;
 }
@@ -857,6 +918,7 @@ main.rowexpp {
         line-height: 25px;
         letter-spacing: 1px;
     }
+
     .brk{
         display: none;
     }
@@ -866,7 +928,6 @@ main.rowexpp {
     }
     
     
-
     
 }
 
