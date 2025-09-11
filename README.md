@@ -18,3 +18,5 @@ View the deployed version @ https://ajjay0604.github.io/Web_Profile/
 
 <img width="2846" height="1530" alt="image" src="https://github.com/user-attachments/assets/818b14cd-27ee-4e6e-ba9b-e1ec475c0462" />
 
+----
+<i>📌 Developed by <b>Ajjay Adhithya V</b> · 🔗 More projects on my <a href="https://github.com/ajjay0604/">GitHub Profile</a></i>
