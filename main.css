@@ -1713,7 +1713,7 @@ main.rowexpp {
   font-weight: 500;
   margin-bottom: 8px;
   color: #ddd;
-  text-align: justify;
+  
 }
 
 .pub-subtitle span {
@@ -1756,6 +1756,7 @@ main.rowexpp {
   line-height: 1.6;
   color: #bbb;
   margin-top: 10px;
+  text-align: justify;
 }
 
 /* =======================
@@ -1769,6 +1770,12 @@ main.rowexpp {
     font-size: 1.3rem;
   }
   
+  .pub-tags{
+    line-height: 30px;
+  }
+  .pub-desc{
+     text-align: justify;
+  }
 
 }
 
@@ -1786,6 +1793,13 @@ main.rowexpp {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+
+  .pub-tags{
+    line-height: 30px;
+  }
+  .pub-desc{
+     text-align: justify;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1799,7 +1813,14 @@ main.rowexpp {
   .pub-subtitle, .pub-info, .pub-desc {
     font-size: 0.85rem;
     line-height: 25px;
-    text-align: justify;
+   
+  }
+
+  .pub-tags{
+    line-height: 30px;
+  }
+  .pub-desc{
+     text-align: justify;
   }
   .pub-btn {
     width: 100%;
