@@ -1839,3 +1839,56 @@ main.rowexpp {
     margin-top: -100px;
 }
 
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: justify; /* ✅ text justified */
+}
+
+.about-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px; /* rounded corners */
+  object-fit: cover;
+}
+
+/* 📱 Small screen fix */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* stack vertically */
+  }
+
+  .about-image {
+    order: -1; /* ✅ image goes on top */
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 300px;
+    width: 95%;
+  }
+
+  .about-text {
+    flex: 1 1 100%;
+    text-align: justify; /* still justified */
+  }
+}
