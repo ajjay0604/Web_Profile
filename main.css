@@ -722,6 +722,14 @@ nav .fa-solid {
     
     
     }
+
+
+    .colexpp .contentsexpp .boxexpp:hover {
+        transform: scale(1);
+        box-shadow: none;
+    
+        cursor: none;
+    }
    
     #kkll11{
         display: flex;
@@ -1646,6 +1654,9 @@ main.rowexpp {
         display: inline;
     }
     
+
+
+    
     
     
 }
@@ -1899,7 +1910,7 @@ main.rowexpp {
 
   .read-more-label {
     display: inline-block;
-    margin-top: 8px;
+    
     color: #0073e6;
     cursor: pointer;
     font-weight: bold;
@@ -1933,3 +1944,61 @@ main.rowexpp {
     }
 
 }
+
+
+
+
+
+/* Read more functionality */
+        .read-toggle {
+            display: none;
+        }
+
+        .read-label {
+            color: #0073e6;
+            cursor: pointer;
+            font-size: 16px;
+
+            font-weight: bold;
+           
+            transition: color 0.3s ease;
+        }
+
+        .read-label:hover {
+            color: #005bb5;
+        }
+
+        .hide-in-mobile1,
+        .hide-in-mobile2,
+        .hide-in-mobile3,
+        .hide-in-mobile4,
+        .hide-in-mobile5,
+        .hide-in-mobile6,
+        .hide-in-mobile7,
+        .hide-in-mobile8 {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .read-toggle:checked + .read-label + .hide-in-mobile1,
+        .read-toggle:checked + .read-label + .hide-in-mobile2,
+        .read-toggle:checked + .read-label + .hide-in-mobile3,
+        .read-toggle:checked + .read-label + .hide-in-mobile4,
+        .read-toggle:checked + .read-label + .hide-in-mobile5,
+        .read-toggle:checked + .read-label + .hide-in-mobile6,
+        .read-toggle:checked + .read-label + .hide-in-mobile7,
+        .read-toggle:checked + .read-label + .hide-in-mobile8 {
+            display: inline;
+        }
+
+        .read-toggle:checked + .read-label {
+            display: none;
+        }
+
+        .brk {
+            display: none;
+        }
+
+        .llklaow {
+            display: none;
+        }
