@@ -1881,3 +1881,55 @@ main.rowexpp {
         margin-right: auto;
     }
 }
+
+
+/* Hide the checkbox completely */
+.read-more-toggle {
+  display: none !important;
+}
+
+@media (max-width: 1381px) {
+  .service-text p {
+    display: none;
+  }
+
+  .service-text p:first-of-type {
+    display: block;
+  }
+
+  .read-more-label {
+    display: inline-block;
+    margin-top: 8px;
+    color: #0073e6;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Show all paragraphs when checked */
+  .read-more-toggle:checked ~ p {
+    display: block;
+  }
+
+  /* Hide "Read more" label once expanded */
+  .read-more-toggle:checked + .read-more-label {
+    display: none;
+  }
+
+.dispbr {
+  display: none;  /* normal line break */
+}
+
+
+}
+
+
+@media (min-width: 1382px) {
+    .read-more-label{
+        display: none;
+    }
+
+    .dispbr{
+        display: block;
+    }
+
+}
