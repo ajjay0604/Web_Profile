@@ -654,13 +654,6 @@ nav .fa-solid {
         align-items: center;
     }
 
-    nav ul li {
-        display: block;
-        margin-bottom: -22px !important;
-        margin-top: 15px !important;
-
-    }
-
     nav{
         margin-right: -10px;
     }
@@ -827,8 +820,8 @@ nav .fa-solid {
 
     nav ul li {
         display: block;
-        margin-bottom: -22px;
-        margin-top: 50px;
+        margin-bottom: -25px;
+        margin-top: 15px;
         
 
     }
@@ -1331,6 +1324,7 @@ nav .fa-solid {
         font-size: 23px;
         margin-top: 20px;
         margin-right: -25px;
+        
     }
 
     nav ul li a:hover {
@@ -1358,8 +1352,8 @@ nav .fa-solid {
 
     nav ul li {
         display: block;
-        margin-bottom: -22px;
-        margin-top: 15px;
+        margin-bottom: -20px;
+        margin-top: 10px;
 
     }
     #serv1{
