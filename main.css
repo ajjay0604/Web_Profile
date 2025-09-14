@@ -634,7 +634,8 @@ form textarea {
 
 #msg {
     color: #268526;
-    margin-left: 240px;
+    margin-left: 255px;
+    
 }
 
 nav .fa-solid {
@@ -721,14 +722,6 @@ nav .fa-solid {
         margin-bottom: 100px;
     
     
-    }
-
-
-    .colexpp .contentsexpp .boxexpp:hover {
-        transform: scale(1);
-        box-shadow: none;
-    
-        cursor: none;
     }
    
     #kkll11{
@@ -1654,9 +1647,6 @@ main.rowexpp {
         display: inline;
     }
     
-
-
-    
     
     
 }
@@ -1892,113 +1882,3 @@ main.rowexpp {
         margin-right: auto;
     }
 }
-
-
-/* Hide the checkbox completely */
-.read-more-toggle {
-  display: none !important;
-}
-
-@media (max-width: 1381px) {
-  .service-text p {
-    display: none;
-  }
-
-  .service-text p:first-of-type {
-    display: block;
-  }
-
-  .read-more-label {
-    display: inline-block;
-    
-    color: #0073e6;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  /* Show all paragraphs when checked */
-  .read-more-toggle:checked ~ p {
-    display: block;
-  }
-
-  /* Hide "Read more" label once expanded */
-  .read-more-toggle:checked + .read-more-label {
-    display: none;
-  }
-
-.dispbr {
-  display: none;  /* normal line break */
-}
-
-
-}
-
-
-@media (min-width: 1382px) {
-    .read-more-label{
-        display: none;
-    }
-
-    .dispbr{
-        display: block;
-    }
-
-}
-
-
-
-
-
-/* Read more functionality */
-        .read-toggle {
-            display: none;
-        }
-
-        .read-label {
-            color: #0073e6;
-            cursor: pointer;
-            font-size: 16px;
-
-            font-weight: bold;
-           
-            transition: color 0.3s ease;
-        }
-
-        .read-label:hover {
-            color: #005bb5;
-        }
-
-        .hide-in-mobile1,
-        .hide-in-mobile2,
-        .hide-in-mobile3,
-        .hide-in-mobile4,
-        .hide-in-mobile5,
-        .hide-in-mobile6,
-        .hide-in-mobile7,
-        .hide-in-mobile8 {
-            display: none;
-            margin-top: 10px;
-        }
-
-        .read-toggle:checked + .read-label + .hide-in-mobile1,
-        .read-toggle:checked + .read-label + .hide-in-mobile2,
-        .read-toggle:checked + .read-label + .hide-in-mobile3,
-        .read-toggle:checked + .read-label + .hide-in-mobile4,
-        .read-toggle:checked + .read-label + .hide-in-mobile5,
-        .read-toggle:checked + .read-label + .hide-in-mobile6,
-        .read-toggle:checked + .read-label + .hide-in-mobile7,
-        .read-toggle:checked + .read-label + .hide-in-mobile8 {
-            display: inline;
-        }
-
-        .read-toggle:checked + .read-label {
-            display: none;
-        }
-
-        .brk {
-            display: none;
-        }
-
-        .llklaow {
-            display: none;
-        }
