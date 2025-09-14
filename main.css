@@ -654,6 +654,13 @@ nav .fa-solid {
         align-items: center;
     }
 
+    nav ul li {
+        display: block;
+        margin-bottom: -22px !important;
+        margin-top: 15px !important;
+
+    }
+
     nav{
         margin-right: -10px;
     }
@@ -1352,7 +1359,7 @@ nav .fa-solid {
     nav ul li {
         display: block;
         margin-bottom: -22px;
-        margin-top: 8px;
+        margin-top: 15px;
 
     }
     #serv1{
