@@ -369,7 +369,7 @@ nav ul li a:hover {
    ===================== */
 
 /* Large tablets & small laptops */
-@media (max-width: 1024px) {
+@media (max-width: 1327px) {
     .grid-container {
         gap: 20px 50px;  /* reduce spacing */
         padding: 0 50px;
