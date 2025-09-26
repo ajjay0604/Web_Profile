@@ -1883,3 +1883,59 @@ main.rowexpp {
         margin-right: auto;
     }
 }
+
+
+ /* =======================================
+   STYLES FOR "READ MORE" FUNCTIONALITY
+   ======================================= */
+
+/* Hide the button and dots by default on larger screens */
+.read-more-btn, .dots {
+    display: none;
+}
+
+/* On desktop, ensure all text content is visible */
+.more-text {
+    display: inline; /* For project descriptions */
+}
+.service-text .more-text {
+    display: block; /* For community service paragraphs */
+}
+
+
+/* Apply these styles only on screens 768px or smaller (tablets and mobiles) */
+@media (max-width: 768px) {
+    /* --- Projects Section --- */
+    .description .more-text {
+        display: none; /* Hide extra text by default */
+    }
+    .description .more-text.expanded {
+        display: inline; /* Show extra text when expanded */
+    }
+    .description .dots {
+        display: inline; /* Show the '...' on mobile */
+    }
+
+    /* --- Community Works Section --- */
+    .service-text .more-text {
+        display: none; /* Hide extra paragraphs by default */
+    }
+    .service-text .more-text.expanded {
+        display: block; /* Show extra paragraphs when expanded */
+    }
+    
+    /* --- Shared Button Style --- */
+    .read-more-btn {
+        display: inline-block; /* Show the button on mobile */
+        margin-top: 10px;
+        color: #008cff;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .read-more-btn:hover {
+        color: #fff;
+    }
+}
+
