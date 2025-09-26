@@ -1759,11 +1759,11 @@ main.rowexpp {
 }
 
 .pub-desc {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #bbb;
-  margin-top: 10px;
-  text-align: justify;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  color: #bbb !important;
+  margin-top: 10px !important;
+  text-align: justify !important;
 }
 
 /* =======================
