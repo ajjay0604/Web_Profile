@@ -1787,6 +1787,106 @@ main.rowexpp {
      text-align: justify;
   }
 
+  .pub-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #000; /* Black background */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+.pub-col .pub-box {
+    border-radius: 20px;
+    border: 1.5px solid #bababa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: none;
+}
+
+.pub-col .pub-box:hover {
+    transform: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.pub-row {
+  width: 100%;
+  
+}
+
+.pub-col {
+  display: flex;
+  justify-content: center;
+}
+
+.pub-box {
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+  width: 95%;              /* ✅ 85% width */
+  margin: 0 auto;          /* ✅ centers the box */
+  margin-bottom: 100px;
+}
+
+
+.pub-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.pub-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #ddd;
+  
+}
+
+.pub-subtitle span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.pub-info {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  color: #bbb;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff0055;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pub-btn:hover {
+  background: #e6004c;
+  transform: scale(1.05);
+}
+
+.pub-tags {
+  margin: 20px 0 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.pub-desc {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  color: #bbb !important;
+  margin-top: 10px !important;
+  text-align: justify !important;
+}
+
 }
 
 @media screen and (max-width: 768px) {
