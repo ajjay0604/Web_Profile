@@ -4,8 +4,7 @@ View the deployed version @ https://ajjay0604.github.io/Web_Profile/
 
 ## 🏠 Home Page :
 
-<img width="2880" height="1456" alt="image" src="https://github.com/user-attachments/assets/0354cae6-9420-410e-a842-97f9de5ed043" />
-
+<img width="1439" height="738" alt="Screenshot 2025-09-29 at 2 35 13 PM" src="https://github.com/user-attachments/assets/a224c485-e3f7-4184-b44c-a4762bbdfbae" />
 
 
 ## 💻 View My Projects :
