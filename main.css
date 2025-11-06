@@ -153,6 +153,7 @@ nav ul li a:hover {
     margin-right: 200px;
     margin-left: 100px;
     box-shadow: 5px 5px 5px #ff004f;
+    margin-top: -16px;
 }
 
 #about {
