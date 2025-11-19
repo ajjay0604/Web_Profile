@@ -369,3 +369,38 @@ if (communityToggleBtn && hiddenCommunity.length > 0) {
     communityToggleBtn.textContent = isExpanded ? 'Show Less Volunteering Works' : 'Show More Voluneering Works';
   });
 }
+
+
+// 1. Initialize EmailJS
+// IMPORTANT: Paste your Public Key inside the quotes below
+(function() {
+    emailjs.init("Isu5yuD0jGkUYfNJU"); 
+})();
+
+// 2. Handle Form Submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const btn = document.getElementById('submit-btn');
+    const originalText = btn.innerText;
+    btn.innerText = 'Sending...';
+
+    const serviceID = 'service_phswhql';
+    const templateID = 'template_76rniif';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.innerText = 'Message Sent!';
+           
+            
+            // Reset button text after 2 seconds
+            setTimeout(() => { btn.innerText = originalText; }, 2000);
+            
+            // Clear the form fields
+            document.getElementById('contact-form').reset();
+        }, (err) => {
+            btn.innerText = originalText;
+            alert('Failed to send message. Please try again.');
+            console.log('FAILED...', err);
+        });
+});
