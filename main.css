@@ -19,7 +19,6 @@
   --primary-soft: rgba(159, 180, 255, 0.18);
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -1286,9 +1285,30 @@ main > section {
   color: #fff;
 }
 
+/* Base Desktop Style (3 Columns) */
 .projects-grid {
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Standard 3 columns */
   gap: 24px;
+}
+
+/* Tablet View (approx. < 1024px): 2 Columns */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View (approx. < 768px): 1 Column */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack 1 on top of another */
+  }
+  
+  /* Optional: Adjust card height or image height for mobile if needed */
+  .project-image {
+    height: 200px; /* Slightly taller images look better on mobile */
+  }
 }
 
 .project-card {
