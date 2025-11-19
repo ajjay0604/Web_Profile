@@ -1,885 +1,761 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ajjay - Portfolio Website</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="description" content="Portfolio website of Ajjay Adhithya V. Showcasing projects, skills, and experience in computer science and technology.">
-    <meta name="keywords" content="Ajjay Adhithya, Ajjay Adhithya V, Portfolio, Web Developer, Software Engineer, Projects, Ajjay, Adhithya">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-    <link rel="icon" href="assets/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ajjay Adhithya V · Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Ajjay Adhithya V — modern projects, research, experience, and contact"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header class="nav-shell" id="home">
+      <div class="nav-bar">
+        <a class="logo" href="#home" aria-label="Ajjay home">
+          <span>Aj</span>
+          <div>
+            <strong>Ajjay Adhithya V</strong>
+            <small>Developer · Researcher</small>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="primaryNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-    <div class="pqws"></div>
-    <img src="./assets/Black White Elegant Monogram Initial Name Logo.png" id="logo">
-    <br  id="lllllo"><br  id="lllllo">
-    <div class="header">
-        <div class="container">
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#technologies">Technologies</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li id="serv1"><a href="#community">Community Works</a></li>
-                    <li id="serv2"><a href="#community">Services</a></li>
-                    <li><a href="#contact">Contact / CV</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
-                </ul>
-                <br><br><br><br><br><br>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+    <main>
+      <section class="hero-grid" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-label">Coder · Developer · Enthusiast</p>
+          <h1 id="hero-title">Ajjay Adhithya V</h1>
+          <p>
+            Final-year CSE student at VIT Chennai building thoughtful software, AI research, and
+            community-first initiatives.
+          </p>
+          <div class="hero-actions">
+            <a class="btn solid" href="#projects">View Projects</a>
+            <a class="btn outline" href="assets/AJJAY_ADHITHYA_RESUME.pdf" download>Download CV</a>
+          </div>
+          <div class="hero-tags">
+            <span>AI Research</span>
+            <span>Full-Stack</span>
+            <span>Community Impact</span>
+          </div>
         </div>
-    </div>
-    <br>
-    <br><br id="pwrs"><br id="pwrs"><br class="pqsla"><br class="pqsla"><br><br><br><br id="lllllo"><br id="lllllo">
-    <p class="ppooq"></p>
-    <img src="./assets/Aj - New img.png" id="imgg">
-    <div class="head">
-        <center>
-        <p style="font-size: 18px;" id="p_head"><span class="o">WEB DEVELOPER</span></p></center>
-        <center><p style="font-size: 18px;" id="p_head" class="lol113"><span class="o">X</span></p></center>
-        <center>
-            <p style="font-size: 18px;" id="p_head"><span class="o">COMMUNITY SERVICE VOLUNTEER</span></p></center>
-        <br>
-        <center>
-        <p id="p_head2"><span class="qpw">I'm </span><span class="one">Ajjay Adhithya V</span></p>
-        <br>
-        <p style="font-size: 28px;" id="p_head3" class="klklooo">From Chennai, Tamil Nadu</p>
-        <br id="lllllo">
-        </center>
-        
-    </div>
-    
-    
-<br>
-
-    <div id="about">
-        <center>
-            <h2 class="ii"><span class="gg">A</span>BOUT ME</h2>
-            <br>
-        </center>
-        
-
-       
-        <br>
-        <div class="about-me">
-    <div class="about-me-image">
-        <img src="./assets/image.jpeg" alt="Ajjay Adhithya V">
-    </div>
-    <br>
-    <div class="about-me-text">
-        <p>Hi! I'm Ajjay Adhithya V. I was born in Chidambaram, a town in Cuddalore district. I spent my childhood in the lively city of Chennai. I did my schooling in Velammal Vidyalaya, where I not only gained a lot of knowledge but also a keen interest in learning about other topics. This school really shaped how I think and learn.</p>
-        <br>
-        <p>Currently, I am a Final Year student at Vellore Institute of Technology in Chennai, studying Computer Science Engineering. I am very passionate about coding and software development. For me, these are not just subjects to study but ways to solve problems and create innovative solutions. Apart from academics, I have a deep love for traveling. Exploring new places and experiencing different cultures has always been a big part of my life. It helps me stay curious and open-minded. In summary, my journey from school to college has been about learning, growing, and following my passions, both in technology and in exploring the world.</p>
-    </div>
-</div>
-
-    </div>
-    <br class="pqwr"><br class="pqwr">
-        <br>
-    <div id="education">
-        <center>
-            <h2 class="ii"><span class="gg">E</span>DUCATION</h2>
-            <br>
-            <br>
-        </center>
-        
-        <div class="edudiv">
-            <div class="jj">
-                <br>
-                <h1 class="popo">Bachelor of Technology</h1>
-                <br>
-                <img src="./assets/clg hat.png" class="clghat">
-            
-                <p class="pppp">4th Year ( 2022 - 2026 )<br>
-                    B.Tech Computer Science & Engineering <br>
-                    Vellore Institute of Technology, Chennai<br>
-                    CGPA : 8.98
-                </p>
-                <br>
+        <div class="hero-panel">
+          <div class="hero-photo">
+            <img src="assets/Aj - New img.png" alt="Portrait of Ajjay" loading="lazy" />
+          </div>
+          <div class="hero-stats">
+            <div>
+              <p>CGPA</p>
+              <strong>8.98</strong>
             </div>
-      
-            <div class="oooo">
-                <br>
-                <h1 class="popo">Higher Secondary</h1>
-                <br>
-                <img src="./assets/school.png" class="school">
-                <p class="pppp">Class 12<br>
-                    Velammal Vidyalaya, Chennai<br>
-                    CBSE Board, 2022<br>
-                    95.2%
-                </p>
-                <br>
+            <div>
+              <p>Graduating</p>
+              <strong>2026</strong>
             </div>
-
-            <div class="lol">
-                <br>
-                <h1 class="popo" id="ppopo">Secondary Education </h1>
-                <br>
-                <img src="./assets/school.png" class="school">
-                <p class="pppp">Class 10<br>
-                    Velammal Vidyalaya, Chennai<br>
-                    CBSE Board, 2020<br>
-                    91.6%
-                </p>
-                <br>
+            <div>
+              <p>Base</p>
+              <strong>Chennai</strong>
             </div>
+          </div>
         </div>
-    </div>
-    
-<br class="pqwr"><br class="pqwr">
-    <div id="technologies">
-    <center>
-        <h2 class="ii"><span class="gg">T</span>ECHNOLOGIES</h2>
-        <br><br>
-    </center>
+      </section>
 
-    <div class="experience_div dd213">
-        <div class="klkl">
-            <br>
-            <center>
-                <h2 class="popppp">Development Tools</h2><br>
-            </center>
-            <div class="grid-container">
-                <div class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Python</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;C/C++</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Java</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;R Studio</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Matlab</p>
-                </div>
-                <div  class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;LT Spice</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;SQL</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;MERN</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Arduino</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;AWS</p>
-                </div>
-            </div>
-            <br>
+      <section class="section" id="about">
+        <div class="section-head">
+          <p>Profile</p>
+          <h2>About</h2>
         </div>
-        <br>
-        <div class="lklk">
-            <br>
-            <center>
-                <h2 class="popppp">Web Development</h2><br>
-            </center>
-            <div class="grid-container">
-                <div class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;HTML</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;CSS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Bootstrap</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;JavaScript</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;React JS</p>
-                </div>
-                <div class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Tailwind</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;NodeJS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;ExpressJS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;MongoDB</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;REST APIs</p>
-                </div>
-
+        <div class="split about-layout">
+          <div class="card about-panel">
+            <div class="about-photo">
+              <img src="assets/image.jpeg" alt="Ajjay at an event" loading="lazy" />
             </div>
-            <br>
+            <div class="about-stats">
+              <div>
+                <p>Graduation</p>
+                <strong>2026</strong>
+              </div>
+              <div>
+                <p>Location</p>
+                <strong>Chennai, India</strong>
+              </div>
+            </div>
+          </div>
+          <article class="card about-copy">
+            <p>
+              Hi! I'm Ajjay Adhithya V. I was born in Chidambaram and raised in the vibrant city of
+              Chennai, where years at Velammal Vidyalaya nurtured both curiosity and discipline. That
+              foundation led me to pursue Computer Science Engineering at VIT Chennai, where I’m now
+              in my final year, experimenting with everything from AI research to full-stack product
+              design. I love translating messy real-world problems into thoughtful, usable software.
+            </p>
+            <p>
+              Outside lectures and labs, you’ll find me traveling, volunteering at coastal cleanups,
+              or collaborating with campus communities. Exploring new cultures keeps me observant,
+              service projects keep me grounded, and building with diverse teams keeps me inspired.
+              Altogether, my journey has become an ongoing pursuit of growth through technology,
+              collaboration, and meaningful impact.
+            </p>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/ajjay-adhithya-v-218716272/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/ajjay0604" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=rs2ZdjwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+              <a href="https://www.instagram.com/ajjay.fr/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
         </div>
-    </div>
+      </section>
 
-    <div class="experience_div dw221">
-        <div class="klkl">
-            <br>
-            <center>
-                <h2 class="popppp">Development Tools</h2><br>
-            </center>
-            <div class="grid-container">
-                <div class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Python</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;C/C++</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Java</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;R Studio</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Matlab</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;LT Spice</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;SQL</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;MERN</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Arduino</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;AWS</p>
-                </div>
-            </div>
-            <br>
+      <section class="section" id="education">
+        <div class="section-head">
+          <p>Academic Path</p>
+          <h2>Education</h2>
         </div>
-        <br>
-        <div class="lklk">
-            <br>
-            <center>
-                <h2 class="popppp">Web Development</h2><br>
-            </center>
-            <div class="grid-container">
-                <div class="p103">
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;HTML</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;CSS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Bootstrap</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;JavaScript</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;React JS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;Tailwind</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;NodeJS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;ExpressJS</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;MongoDB</p>
-                    <p><i class="fa-solid fa-square-check"></i> &nbsp;REST APIs</p>
-                </div>
-
+        <div class="education-summary card accent" style="margin-bottom: 32px;">
+          <div class="education-summary-content">
+            <div class="education-summary-text">
+              <h3>Educational Journey</h3>
+              <p>From secondary education at Velammal Vidyalaya to pursuing a B.Tech in Computer Science & Engineering at VIT Chennai, my academic path has been focused on building a strong foundation in technology, mathematics, and problem-solving.</p>
             </div>
-            <br>
+            <div class="education-stats">
+              <div class="education-stat-box">
+                <p class="stat-label">B.Tech</p>
+                <strong class="stat-value">8.98</strong>
+              </div>
+              <div class="education-stat-box">
+                <p class="stat-label">Class 12</p>
+                <strong class="stat-value">95.2%</strong>
+              </div>
+              <div class="education-stat-box">
+                <p class="stat-label">Class 10</p>
+                <strong class="stat-value">91.6%</strong>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-   <br><br> 
-
-   <br>
-    <br>
-    <center id="publications">
-        <h2 class="iii"><span class="gg">P</span>UBLICATIONS</h2>
-        
-        
-    </center>
-
-    
-
-        <div class="pub-container">
-    <main class="pub-row">
-        <section class="pub-col">
-            <div class="pub-box">
-                <h3 class="pub-title">
-                    Transforming Road Infrastructure Management: A Multimodal Road Quality Rating System
-                </h3>
-
-                <h4 class="pub-subtitle">👥 &nbsp;&nbsp;Authors : <span>Ajjay Adhithya V, Praveen S Kumar, John Kevin P, Dr. Kirankumar Manivannan</span></h4>
-                <h4 class="pub-subtitle">📝 &nbsp;&nbsp;Published in 2025 8th International Conference on Computing Methodologies and Communication (ICCMC)</h4>
-                <h4 class="pub-subtitle">📖 &nbsp;&nbsp;Publisher : IEEE ( Institute of Electrical and Electronics Engineers )</h4>
-                <h4 class="pub-info">🔑 &nbsp;&nbsp;DOI : 10.1109/ICCMC65190.2025.11140874</h4>
-                <h4 class="pub-info">🗓 &nbsp;&nbsp;04 September 2025</h4>
-
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/11140874" 
-                   class="btn btn2" 
-                   target="_blank">
-                   VIEW PUBLICATION
-                </a>
-
-                <br>
-                <h4 class="pub-tags">♦ Internet of Things (IoT), Embedded Systems & Machine Learning</h4>
-                
-                <p class="pub-desc">
-                    This paper proposes an intelligent Road Surface Quality Rating (RQR) System that uses real-time data from multiple sensors to evaluate and rate road conditions. 
-                    The system assigns quality scores to different road segments, enabling better monitoring, proactive maintenance planning, and optimized route selection. 
-                    It also integrates hazard alert notifications, ensuring enhanced road user safety through GIS-enabled platforms. 
-                    By shifting from reactive to proactive infrastructure management, the system improves transportation resilience, resource efficiency, and travel reliability.
-                </p>
+        <div class="education-cards-grid">
+          <article class="education-card">
+            <div class="education-card-header">
+              <div class="education-icon">🎓</div>
+              <div class="education-badge">B.Tech</div>
             </div>
-        </section>
-    </main>
-
-    
-</div>
-
-  <div class="pub-container ko123">
-    <main class="pub-row">
-        <section class="pub-col">
-            <div class="pub-box">
-                <h3 class="pub-title">
-                    Trade-Offs in AI-Text Detection: A Comparative Study of DistilBERT, ALBERT, and TinyBERT
-                </h3>
-
-                <h4 class="pub-subtitle">👥 &nbsp;&nbsp;Authors : <span>Ajjay Adhithya V, Garav Malik, Dr. Sahaya Beni Prathiba, Dr. Dhanalakshmi Ranganayakulu</span></h4>
-                <h4 class="pub-subtitle">📝 &nbsp;&nbsp;Yet to be Published in International Conference on Sustainable Communication Networks and Application ICSCN 2025</h4>
-                <h4 class="pub-subtitle">📖 &nbsp;&nbsp;Publisher : IEEE ( Institute of Electrical and Electronics Engineers )</h4>
-                <!-- <h4 class="pub-info">🔑 &nbsp;&nbsp;DOI : 10.1109/ICCMC65190.2025.11140874</h4> -->
-                <!-- <h4 class="pub-info">🗓 &nbsp;&nbsp;04 September 2025</h4> -->
-
-                <br>
-                <a href="" 
-                   class="btn btn2" 
-                   target="_blank">
-                   VIEW PUBLICATION
-                </a>
-                &nbsp;&nbsp;
-                <a href="https://github.com/ajjay0604/Trade-Offs-in-AI-Text-Detection" 
-                   class="btn btn2" 
-                   target="_blank">
-                   &nbsp;&nbsp;&nbsp;&nbsp;VIEW GITHUB&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <br>
-                <p class="pub-desc">Note: Publication link may not work as the paper is yet to be published</p>
-                
-                <h4 class="pub-tags">♦ Natural Language Processing (NLP), Machine Learning (Transformer Models)</h4>
-                
-                <p class="pub-desc">
-                This paper presents a comparative study of three lightweight transformer models: DistilBERT, ALBERT, and TinyBERT for the task of detecting AI-generated text. It evaluates the trade-offs between classification accuracy and computational efficiency, such as inference time and model size, against a traditional TF-IDF and Logistic Regression baseline. The study concludes that TinyBERT offers the most practical balance, achieving a high F1-Score of 0.9936 while being significantly faster and smaller than the other models. This makes it an ideal candidate for scalable, real-world deployment where resources may be limited.    
-                </p>
+            <div class="education-card-content">
+              <h3>Computer Science & Engineering</h3>
+              <p class="education-institution">Vellore Institute of Technology, Chennai</p>
+              <div class="education-meta">
+                <span class="education-period">2022 – 2026</span>
+                <span class="education-score">CGPA 8.98</span>
+              </div>
             </div>
-        </section>
-    </main>
+            <button class="btn outline curriculum-btn" data-education="btech">View Curriculum</button>
+          </article>
+          <article class="education-card">
+            <div class="education-card-header">
+              <div class="education-icon">📚</div>
+              <div class="education-badge">Class 12</div>
+            </div>
+            <div class="education-card-content">
+              <h3>Higher Secondary</h3>
+              <p class="education-institution">Velammal Vidyalaya, Chennai</p>
+              <p class="education-institution">CBSE</p>
+              <div class="education-meta">
+                <span class="education-period">2022</span>
+                <span class="education-score">95.2%</span>
+              </div>
+            </div>
+            <button class="btn outline curriculum-btn" data-education="class12">View Curriculum</button>
+          </article>
+          <article class="education-card">
+            <div class="education-card-header">
+              <div class="education-icon">📖</div>
+              <div class="education-badge">Class 10</div>
+            </div>
+            <div class="education-card-content">
+              <h3>Secondary Education</h3>
+              <p class="education-institution">Velammal Vidyalaya, Chennai</p>
+              <p class="education-institution">CBSE</p>
+              <div class="education-meta">
+                <span class="education-period">2020</span>
+                <span class="education-score">91.6%</span>
+              </div>
+            </div>
+            <button class="btn outline curriculum-btn" data-education="class10">View Curriculum</button>
+          </article>
+        </div>
+      </section>
 
-    
-    
-</div>
+      <section class="section" id="skills">
+        <div class="section-head">
+          <p>Toolkit</p>
+          <h2>Technologies</h2>
+        </div>
+        <div class="tech-summary card accent" style="margin-bottom: 32px;">
+          <h3>Technology Stack</h3>
+          <p>Proficient in a diverse range of programming languages, web technologies, and development tools. From core languages like Python, C/C++, and Java to modern full-stack frameworks including React, Node.js, and MongoDB. Experienced with cloud platforms (AWS), embedded systems (Arduino, IoT), and specialized tools for data analysis and circuit design.</p>
+        </div>
+        <div class="tech-grid">
+          <article class="card tech-card">
+            <h3>Languages & Core</h3>
+            <div class="tech-list" role="list">
+              <button class="tech-chip" type="button" aria-label="Python"> 
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon-img" />
+                <span>Python</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="C and C++">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-icon-img" />
+                <span>C / C++</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="Java">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon-img" />
+                <span>Java</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="SQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="tech-icon-img" />
+                <span>SQL</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="R Studio">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" class="tech-icon-img" />
+                <span>R Studio</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="MATLAB">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" class="tech-icon-img" />
+                <span>MATLAB</span>
+              </button>
+            </div>
+          </article>
 
-<div class="pub-container ko123">
-    <main class="pub-row">
-        <section class="pub-col">
-            <div class="pub-box">
-                <h3 class="pub-title">
-                    LoRaWAN-Based Blood Sugar Monitoring to Enhance Diabetes Management in Rural Areas
-                </h3>
+          <article class="card tech-card">
+            <h3>Web & Full Stack</h3>
+            <div class="tech-list" role="list">
+              <button class="tech-chip" type="button" aria-label="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon-img" />
+                <span>HTML</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon-img" />
+                <span>CSS</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" />
+                <span>JavaScript</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="React">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" />
+                <span>React</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="Tailwind">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="tech-icon-img" />
+                <span>Tailwind</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="Node.js">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" />
+                <span>Node.js</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="MongoDB">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-icon-img" />
+                <span>MongoDB</span>
+              </button>
+            </div>
+          </article>
 
-                <h4 class="pub-subtitle">👥 &nbsp;&nbsp;Author : <span>Ajjay Adhithya V</span></h4>
-                <h4 class="pub-subtitle">📖 &nbsp;&nbsp;Publisher : Zenodo (Open-access repository)</h4>
-                <h4 class="pub-info">🔑 &nbsp;&nbsp;DOI : 10.5281/zenodo.17309300</h4>
-                <h4 class="pub-info">🗓 &nbsp;&nbsp;10 October 2025</h4>
+          <article class="card tech-card">
+            <h3>Platforms & Tools</h3>
+            <div class="tech-list" role="list">
+              <button class="tech-chip" type="button" aria-label="AWS">
+                <span class="tech-icon-text">A</span>
+                <span>AWS</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="Arduino">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="tech-icon-img" />
+                <span>Arduino</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="LTSpice">
+                <span class="tech-icon-text">LT</span>
+                <span>LTSpice</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="Embedded">
+                <span class="tech-icon-text">⚙️</span>
+                <span>Embedded</span>
+              </button>
+              <button class="tech-chip" type="button" aria-label="IoT">
+                <span class="tech-icon-text">🌐</span>
+                <span>IoT</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
 
-                <br>
-                <a href="https://zenodo.org/records/17309300" 
-                   class="btn btn2" 
-                   target="_blank">
-                   VIEW PUBLICATION
-                </a>
-                <br>
-                <h4 class="pub-tags">♦ Internet of Things (IoT), Embedded Systems, Machine Learning</h4>
-                
-                <p class="pub-desc">
+      <section class="section" id="publications">
+        <div class="section-head">
+          <p>Research</p>
+          <h2>Publications</h2>
+        </div>
+        <div class="pub-grid">
+          <article class="publication-card">
+            <header>
+              <div class="pub-meta">IEEE ICCMC · Sept 2025 · DOI 10.1109/ICCMC65190.2025.11140874</div>
+              <h3>Transforming Road Infrastructure Management: A Multimodal Road Quality Rating System</h3>
+              <p class="pub-authors">Ajjay Adhithya V, Praveen S Kumar, John Kevin P, Dr. Kirankumar Manivannan</p>
+            </header>
+            <p class="pub-summary">
+              Intelligent Road Quality Rating system that fuses multi-sensor telemetry and GIS alerts to move infrastructure management from reactive to proactive.
+            </p>
+            <div class="pub-extra">
+              <p>
+                This paper proposes an intelligent Road Surface Quality Rating (RQR) System that uses real-time data from multiple sensors to evaluate and rate road conditions. The system assigns quality scores to different road segments, enabling better monitoring, proactive maintenance planning, and optimized route selection. It also integrates hazard alert notifications, ensuring enhanced road user safety through GIS-enabled platforms. By shifting from reactive to proactive infrastructure management, the system improves transportation resilience, resource efficiency, and travel reliability.
+              </p>
+            </div>
+            <div class="pub-actions">
+              <a class="btn ghost" href="https://ieeexplore.ieee.org/document/11140874" target="_blank" rel="noopener">View Paper</a>
+              <button class="pub-toggle" type="button">Read More</button>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <header>
+              <div class="pub-meta">IEEE ICSCN 2025 (Accepted)</div>
+              <h3>Trade-Offs in AI-Text Detection: A Comparative Study of DistilBERT, ALBERT, and TinyBERT</h3>
+              <p class="pub-authors">Ajjay Adhithya V, Garav Malik, Dr. Sahaya Beni Prathiba, Dr. Dhanalakshmi Ranganayakulu</p>
+            </header>
+            <p class="pub-summary">
+              Comparative analysis highlighting how lightweight transformer architectures balance accuracy, inference speed, and overall deployability.
+            </p>
+            <div class="pub-extra">
+              <p>
+                This paper presents a comparative study of three lightweight transformer models: DistilBERT, ALBERT, and TinyBERT for the task of detecting AI-generated text. It evaluates the trade-offs between classification accuracy and computational efficiency, such as inference time and model size, against a traditional TF-IDF and Logistic Regression baseline. The study concludes that TinyBERT offers the most practical balance, achieving a high F1-Score of 0.9936 while being significantly faster and smaller than the other models. This makes it an ideal candidate for scalable, real-world deployment where resources may be limited.
+              </p>
+            </div>
+            <div class="pub-actions">
+              <a class="btn ghost" href="https://github.com/ajjay0604/Trade-Offs-in-AI-Text-Detection" target="_blank" rel="noopener">View GitHub</a>
+              <button class="pub-toggle" type="button">Read More</button>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <header>
+              <div class="pub-meta">Zenodo · Oct 2025 · DOI 10.5281/zenodo.17309300</div>
+              <h3>LoRaWAN-Based Blood Sugar Monitoring to Enhance Diabetes Management in Rural Areas</h3>
+              <p class="pub-authors">Ajjay Adhithya V</p>
+            </header>
+            <p class="pub-summary">
+              Conceptual LoRaWAN-enabled CGM framework delivering remote alerts, predictive models, and low-power healthcare coverage for rural communities.
+            </p>
+            <div class="pub-extra">
+              <p>
                 This paper proposes a conceptual framework for a LoRaWAN-based blood glucose monitoring system aimed at improving diabetes management in rural areas with limited healthcare access. Continuous glucose monitoring (CGM) sensors transmit patient data over a long-range, low-power network to a centralized server, enabling remote monitoring by healthcare professionals without relying on internet connectivity. The framework also envisions the use of machine learning algorithms to analyze historical glucose data, predict trends, and generate automated alerts for abnormal glucose levels. Together, these features offer a scalable and cost-effective approach to enhance timely diabetes care in low-resource settings.
-                </p>
+              </p>
             </div>
-        </section>
+            <div class="pub-actions">
+              <a class="btn ghost" href="https://zenodo.org/records/17309300" target="_blank" rel="noopener">View Paper</a>
+              <button class="pub-toggle" type="button">Read More</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <p>Journey</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="experience-item">
+            <div>
+              <h3>Summer Research Intern · CCPS, VIT Chennai</h3>
+              <span>May 2025 – Aug 2025 · On-site</span>
+              <p>
+                Led experimentation on lightweight transformer models for AI-text detection, shaping a
+                publication under Dr. Sahaya Beni Prathiba.
+              </p>
+              <div class="experience-extra">
+                <p>I completed the <strong>CCPS Research Internship 2025</strong> under the mentorship of <strong>Dr. Sahaya Beni Prathiba B</strong>, where I worked on the research paper <em>"Trade-Offs in AI-Text Detection: A Comparative Study of DistilBERT, ALBERT, and TinyBERT"</em>.</p>
+                <p>My work involved designing and implementing experiments with lightweight Transformer models to analyze efficiency & performance trade-offs in AI-generated text detection, and the paper has been accepted for conference proceedings. This internship also provided valuable exposure to collaborative research in AI and NLP-related challenges.</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>Internship Trainee · India Space Lab</h3>
+              <span>Dec 2024 – Jan 2025 · Remote</span>
+              <p>Exposure to drone technology, CanSat/CubeSat systems, and space entrepreneurship.</p>
+              <div class="experience-extra">
+                <p>Intern at India Space Lab, gaining hands-on experience in Advanced Drone Technology, CanSat and CubeSat satellite systems, Exoplanet Astronomy, and Space Entrepreneurship, building a strong foundation in innovative space technologies and business strategies.</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>Technical Team Member · InstiBuzz</h3>
+              <span>Aug 2024 – Oct 2024 · Hybrid</span>
+              <p>Maintained and optimized IIT Madras campus brand properties.</p>
+              <div class="experience-extra">
+                <p>As a Technical Team Member at Instibuzz, the all-in-one campus brand of IIT Madras, We focused on maintaining and optimizing the website to ensure smooth functionality, an engaging user experience, and a strong digital presence for the brand.</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>Green Rotaractor · Rotaract Club of VIT Chennai</h3>
+              <span>Sep 2024 – May 2025 · On-site</span>
+              <p>Drove sustainability-focused community programs and clean-up drives.</p>
+              <div class="experience-extra">
+                <p>As a Green Rotaractor, I contribute to community service projects focusing on sustainability and social impact.</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>Full Stack Web Developer · CodeChef VIT Chennai</h3>
+              <span>Jun 2024 – May 2025 · Hybrid</span>
+              <p>Owned both frontend and backend initiatives powering events and hackathons.</p>
+              <div class="experience-extra">
+                <p>As a member of the Web Developer Team, I develop and maintain the club's website, collaborate on projects, and provide technical support for events.</p>
+                <p><strong>Backend Developer:</strong> Aug 2024 - May 2025 · 8 mos</p>
+                <p><strong>Frontend Developer:</strong> Jun 2024 - Aug 2024 · 3 mos</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>Management Team Member · IEEE Computer Society VITC</h3>
+              <span>Oct 2023 – Jun 2024 · Hybrid</span>
+              <p>Coordinated programs and supported technology communities on campus.</p>
+              <div class="experience-extra">
+                <p>Management Team Member of the IEEE Computer Society Club @VIT Chennai</p>
+              </div>
+              <button class="experience-toggle btn ghost" type="button">Read More</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <p>Work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="filter-row">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI</button>
+          <button class="filter" data-filter="fullstack">Full-Stack</button>
+          <button class="filter" data-filter="iot">IoT</button>
+          <button class="filter" data-filter="game">Game</button>
+        </div>
+        <div class="projects-container">
+          <div class="grid projects-grid">
+            <article class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="YouTube Trend Predictor" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">NLP · 2025</p>
+                <h3>YouTube Trend Predictor Using NLP</h3>
+                <p>
+                  TF-IDF and ensemble models estimating the probability of a video trending with
+                  actionable recommendations.
+                </p>
+                <div class="badge-row"><span>Python</span><span>NLP</span><span>ML</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/ajjay0604/Youtube-Trend-Predictor-using-NLP" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
+                  <button class="btn-link details" data-title="YouTube Trend Predictor" data-description="Evaluates titles, descriptions, and tags to forecast trending potential using TF-IDF vectors, Random Forest, and XGBoost ensembles with creator recommendations." data-tags="NLP, Machine Learning, Analytics">Details</button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" alt="Traffic Signal Optimization" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">Reinforcement Learning · 2024</p>
+                <h3>Adaptive Traffic Signal Optimization</h3>
+                <p>Random Forest + Q-learning collaboration to reduce congestion through live signal tuning.</p>
+                <div class="badge-row"><span>RL</span><span>Python</span><span>Pygame</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/ajjay0604/Traffic-Signal-Optimization-using-RL" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
+                  <button class="btn-link details" data-title="Adaptive Traffic Signal Optimization" data-description="Simulates complex junctions, predicts congestion, and dynamically reallocates signal phases with continuous Q-learning updates." data-tags="Smart Mobility, RL, Simulation">Details</button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="fullstack">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop" alt="Campus Recruitment System" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">Databases · 2024</p>
+                <h3>Campus Recruitment Management System</h3>
+                <p>Oracle SQL schemas to automate placement workflows, candidate tracking, and analytics.</p>
+                <div class="badge-row"><span>Oracle</span><span>SQL</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/ajjay0604/Campus-Recruitment-System" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
+                  <button class="btn-link details" data-title="Campus Recruitment Management System" data-description="Structured database for candidate profiles, job postings, interview scheduling, and reporting." data-tags="Database, Automation, SQL">Details</button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-hidden" data-category="fullstack">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="DevLab Code Evaluation Platform" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">EdTech · 2024</p>
+                <h3>DevLab – Code Evaluation Platform</h3>
+                <p>AWS-backed learning platform with DynamoDB storage and Amplify hosting for real-time labs.</p>
+                <div class="badge-row"><span>AWS</span><span>Full Stack</span></div>
+                <div class="project-links">
+                  <a href="https://drive.google.com/file/d/1d-5iTWqCmydM4oy1DOnO6GAFOIaSz9yw/view?usp=sharing" target="_blank" rel="noopener" class="btn-link">Report</a>
+                  <button class="btn-link details" data-title="DevLab" data-description="Personalized learning paths, secure AWS authentication, and analytics dashboards for instructors." data-tags="AWS, EdTech, Platform">Details</button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-hidden" data-category="game">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" alt="Flappy Bird Game" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">Game Dev · 2024</p>
+                <h3>Flappy Bird Leaderboard Experience</h3>
+                <p>Responsive leaderboard with animated rankings and live scores for the CodeChef chapter.</p>
+                <div class="badge-row"><span>React</span><span>Tailwind</span></div>
+                <div class="project-links">
+                  <a href="https://flappy-bird-bay-delta.vercel.app/" target="_blank" rel="noopener" class="btn-link">Demo</a>
+                  <a href="https://github.com/ajjay0604/Flappy-Bird" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-hidden" data-category="fullstack">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop" alt="News Aggregator" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">Web Apps · 2024</p>
+                <h3>News Aggregator with Personalized Feeds</h3>
+                <p>MERN stack app with curated feeds, language filters, dark mode, and auth.</p>
+                <div class="badge-row"><span>MERN</span><span>Dark Mode</span></div>
+                <div class="project-links">
+                  <a href="https://news-aggregator-frontend-six.vercel.app/" target="_blank" rel="noopener" class="btn-link">Demo</a>
+                  <a href="https://github.com/ajjay0604/News-Aggregator-using-MERN-Stack" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-hidden" data-category="iot">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Heart Rate Monitoring" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">IoT · 2024</p>
+                <h3>Heart Rate Monitoring with GPS Alerts</h3>
+                <p>Wearable prototype sending threshold-based SMS alerts with location data.</p>
+                <div class="badge-row"><span>Arduino</span><span>IoT</span></div>
+                <div class="project-links">
+                  <a href="https://drive.google.com/file/d/1e9zCjIiHXE2uD57KYjwyt2dXxyYpkbXI/view?usp=sharing" target="_blank" rel="noopener" class="btn-link">Poster</a>
+                  <button class="btn-link details" data-title="Heart Rate Monitoring" data-description="Continuous vitals plus GSM alerts and OLED dashboards for proactive health monitoring." data-tags="IoT, Healthcare, Embedded">Details</button>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-hidden" data-category="iot">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop" alt="Smart Irrigation System" class="project-image-img" />
+              </div>
+              <div class="project-content">
+                <p class="meta">IoT · 2023</p>
+                <h3>Smart Irrigation with Moisture-Based Pump Control</h3>
+                <p>Soil sensors, rainfall forecasts, and dashboards enabling sustainable agriculture.</p>
+                <div class="badge-row"><span>ESP32</span><span>IoT</span></div>
+                <div class="project-links">
+                  <a href="https://drive.google.com/file/d/13gAJEbiOKLCFNByOcxw_fN22vAtV_M8b/view?usp=sharing" target="_blank" rel="noopener" class="btn-link">Report</a>
+                  <button class="btn-link details" data-title="Smart Irrigation" data-description="Cloud-connected irrigation with moisture thresholds, manual overrides, and predictive watering." data-tags="IoT, Agriculture, Automation">Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="projects-toggle-container" style="text-align: center; margin-top: 32px;">
+            <button class="btn outline projects-toggle-btn" type="button">Show More Projects</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="community">
+        <div class="section-head">
+          <p>Impact</p>
+          <h2>Community Works</h2>
+        </div>
+        <div class="community-container">
+          <div class="community-grid">
+            <article class="community-item">
+              <div class="community-image-wrapper">
+                <img src="assets/beachclean.png" alt="Volunteers cleaning Marina Beach" loading="lazy" />
+              </div>
+              <div class="community-content">
+                <p class="community-meta">Sep 21, 2024 · Marina Beach Cleanup</p>
+                <h3>Uniting for a Cleaner Coastline</h3>
+                <p>
+                  Joined Rotaract Club of VIT Chennai, CommuniTree, and Rotaract District 3234 for the Planet's
+                  Largest Coastal Cleanup to protect marine life despite heavy rain.
+                </p>
+              </div>
+            </article>
+
+            <article class="community-item">
+              <div class="community-image-wrapper">
+                <img src="assets/one_walk.png" alt="Breast cancer awareness walkathon" loading="lazy" />
+              </div>
+              <div class="community-content">
+                <p class="community-meta">Oct 27, 2024 · One Walk, One Hope</p>
+                <h3>Breast Cancer Awareness Walkathon</h3>
+                <p>
+                  Walked with Rotaract clubs across Chennai to spotlight early detection, survivor support, and
+                  healthcare education for breast cancer.
+                </p>
+              </div>
+            </article>
+
+            <article class="community-item">
+              <div class="community-image-wrapper">
+                <img src="assets/5k_run1.png" alt="Run for Quality participants" loading="lazy" />
+              </div>
+              <div class="community-content">
+                <p class="community-meta">Nov 10, 2024 · BIS Run for Quality</p>
+                <h3>Ran for Quality</h3>
+                <p>
+                  Participated in the Bureau of Indian Standards 5K run advocating for product safety,
+                  standards, and consumer awareness across India.
+                </p>
+              </div>
+            </article>
+
+            <article class="community-item community-hidden">
+              <div class="community-image-wrapper">
+                <img src="assets/Beasant_Beach_Clean.png" alt="Volunteers at Elliot's Beach cleanup" loading="lazy" />
+              </div>
+              <div class="community-content">
+                <p class="community-meta">Jan 12, 2025 · Elliot's Beach Cleanup</p>
+                <h3>Kadal Karai – Season 2</h3>
+                <p>
+                  Collaborated with Rotaract Club of VIT Chennai and Rotary Club of Chennai to remove litter and
+                  educate visitors on preserving Elliot's Beach.
+                </p>
+              </div>
+            </article>
+
+            <article class="community-item community-hidden">
+              <div class="community-image-wrapper">
+                <img src="assets/run_img_cancer.jpg" alt="Chennai Cancer Awareness Run 2025" loading="lazy" />
+              </div>
+              <div class="community-content">
+                <p class="community-meta">Feb 2, 2025 · Chennai Cancer Awareness Run</p>
+                <h3>Returning Strong: Cancer Awareness Run 2025</h3>
+                <p>
+                  Participated in the 3rd edition of the K10K Cancer Awareness Run at Olcott Memorial School,
+                  Besant Nagar, to support cancer treatment for underprivileged patients.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="community-toggle-container" style="text-align: center; margin-top: 32px;">
+            <button class="btn outline community-toggle-btn" type="button">Show More Voluneering Works</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-head">
+          <p>Connect</p>
+          <h2>Contact</h2>
+        </div>
+        <div class="split contact-wrap">
+          <div class="card contact-info">
+            <p class="eyebrow">Email</p>
+            <a class="email" href="mailto:ajayadi2005.aa@gmail.com">ajayadi2005.aa@gmail.com</a>
+            <p class="eyebrow">Social</p>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/ajjay-adhithya-v-218716272/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/ajjay0604" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.researchgate.net/profile/Ajjay-Adhithya-Venkatesh" target="_blank" rel="noopener">ResearchGate</a>
+              <a href="https://orcid.org/0009-0004-0197-6811" target="_blank" rel="noopener">ORCID</a>
+            </div>
+            <a class="btn solid full" href="assets/AJJAY_ADHITHYA_RESUME.pdf" download>Download CV</a>
+          </div>
+          <form class="card contact-form" action="https://formspree.io/f/mqkrjvbb" method="POST">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+            <label>
+              Occupation
+              <input type="text" name="occupation" placeholder="Role or company" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="How can I help?" required></textarea>
+            </label>
+            <button class="btn solid" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    
-</div>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ajjay Adhithya V · Built with intent in Chennai</p>
+    </footer>
 
-<div class="oneoneone"></div>
-     
-        
-    <center id="experience" class="spaceexp">
-        <h2 class="ii"><span class="gg">E</span>XPERIENCE</h2>
-        <br>
-        <br>
-    </center>
-
-    <div class="bodyy">
-
-
-        <div class="containerexpp">
-         
-            <main class="rowexpp">
-                <section class="colexpp">
-                    <div class="contentsexpp">
-                        <div class="boxexpp">
-                            <h3>Summer Research Intern</h3>
-                            <h4>Centre for Cyber Physical Systems (CCPS) @ VIT Chennai · Internship</h4>
-                            <h4>May 2025 - August 2025 · 3 mo</h4>
-                            <h4>On-site</h4>
-                            <p class="pub-desc">
-                                I completed the <strong>CCPS Research Internship 2025</strong> under the mentorship of
-                                <strong>Dr. Sahaya Beni Prathiba B</strong>, where I worked on the research paper
-                                <em>“Trade-Offs in AI-Text Detection: A Comparative Study of DistilBERT, ALBERT, and TinyBERT”</em> .
-                            </p>
-                            
-                            <p class="pub-desc">
-                                My work involved designing and implementing experiments with lightweight Transformer models to analyze
-                                efficiency & performance trade-offs in AI-generated text detection, and the paper has been accepted for
-                                conference proceedings. This internship also provided valuable exposure to collaborative research in AI and
-                                NLP-related challenges.
-                            </p>
-                        </div>
-                        <br>
-                        <div class="boxexpp">
-                            <h3>Internship Trainee</h3>
-                            <h4>India Space Lab · Internship</h4>
-                            <h4>Dec 2024 - Jan 2025 · 1 mo</h4>
-                            <h4>Remote</h4>
-                            <p class="pub-desc">Intern at India Space Lab, gaining hands-on experience in Advanced Drone Technology, CanSat and CubeSat satellite systems, Exoplanet Astronomy, and Space Entrepreneurship, building a strong foundation in innovative space technologies and business strategies.</p>
-                        </div>
-                        <br>
-                        <div class="boxexpp">
-                            <h3>Technical Team Member</h3>
-                            <h4>InstiBuzz · Internship</h4>
-                            <h4>Aug 2024 - Oct 2024 · 2 mos</h4>
-                            <h4>Chennai, Tamil Nadu, India · Hybrid</h4>
-                            <p class="pub-desc">As a Technical Team Member at Instibuzz, the all-in-one campus brand of IIT Madras, We focused on maintaining and optimizing the website to ensure smooth functionality, an engaging user experience, and a strong digital presence for the brand.</p>
-                        </div>
-                        <br>
-                        <div class="boxexpp">
-                            <h3>Green Rotaractor</h3>
-                            <h4>Rotaract Club of VIT (Chennai Campus) · Full-time</h4>
-                            <h4>Sep 2024 - May 2025 · 9 mos</h4>
-                            <h4>Chennai, Tamil Nadu, India · On-site</h4>
-                            <p class="pub-desc">As a Green Rotaractor, I contribute to community service projects focusing on sustainability and social impact.</p>
-                        </div>
-                        
-                        <br>
-                         
-                        <div class="boxexpp">
-                            <h3>Full Stack Web Developer</h3>
-                            <h4>CodeChef VIT-Chennai Chapter</h4>
-                            <h4>Full-time · 1 yr</h4><br>
-                            <div class="boxexpp">
-                                <h3 class="poqls">Backend Developer</h3>
-                                <h4>Aug 2024 - May 2025 · 8 mos</h4>
-                                <h4>Chennai, Tamil Nadu, India</h4>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="poqls">Frontend Developer</h3>
-                                <h4>Jun 2024 - Aug 2024 · 3 mos</h4>
-                                <h4>Chennai, Tamil Nadu, India</h4>
-                            </div>
-                            <br>
-                            <p class="pub-desc">As a member of the Web Developer Team, I develop and maintain the club's website, collaborate on projects, and provide technical support for events.</p>
-                        </div>
-                        <br>
-                        <div class="boxexpp">
-                            <h3>Management Team Member</h3>
-                            <h4>IEEE Computer Society - VITC · Part-time</h4>
-                            <h4>Oct 2023 - Jun 2024 · 9 mos</h4>
-                            <h4>Chennai, Tamil Nadu, India · Hybrid</h4>
-                            <p class="pub-desc">Management Team Member of the IEEE Computer Society Club @VIT Chennai</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div>
-        </div>
-        
-
-
-
-
-
-        <br><br>
-
-        <div class="qqww"></div>
-        <center id="projects">
-            <h2 class="ii"><span class="gg">P</span>ROJECTS</h2>
-            <br>
-            <br>
-        </center>
-    
-        <div class="bodyy">
-    
-    
-            <div class="containerexpp">
-             
-                <main class="rowexpp">
-                    <section class="colexpp">
-                        <div class="contentsexpp">
-                            <div class="boxexpp">
-                                <h3 class="proj_h">YouTube Trend Predictor Using NLP</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Feb 2025 - April 2025 · 2 mos</h4>
-                                <br>
-                                <a href="https://github.com/ajjay0604/Youtube-Trend-Predictor-using-NLP" class="btn btn2" id="inpw" target="_blank">VIEW GITHUB</a>
-                                <br><br>
-                                <br class="brk">
-                                <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Natural Language Processing (NLP), Machine Learning</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">An AI-powered system to predict the trending potential of YouTube videos based on their title, description, and tags.</span><span class="dots">.. </span><span class="more-text"> The project leverages NLP-based text cleaning, TF-IDF feature extraction, and multiple machine learning models 
-                                    (Random Forest, XGBoost, Gradient Boosting) to estimate the probability of a video trending. 
-                                    It also provides actionable recommendations to improve video visibility, such as optimizing titles, descriptions, and tags. 
-                                    The solution includes easy-to-use Jupyter notebooks for training and testing, making it practical for creators 
-                                    to boost engagement and reach.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">Adaptive Traffic Signal Optimization Using Reinforcement Learning For Dynamic Traffic Flow Management</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Sep 2024 - Nov 2024 · 3 mos</h4>
-                                <BR>
-                                    <a href="https://github.com/ajjay0604/Traffic-Signal-Optimization-using-RL" class="btn btn2" id="inpw" target="_blank">VIEW GITHUB</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Artificial Intelligence (AI) and Reinforcement Learning</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">This project focuses on optimizing urban traffic signal systems using Reinforcement Learning (RL) to address dynamic traffic flow challenges.</span><span class="dots">.. </span><span class="more-text"> By simulating traffic scenarios in Pygame, it combines a Random Forest Classifier for initial traffic predictions with Q-learning for adaptive and continuous signal optimization. Leveraging real-time and historical traffic data, the system dynamically adjusts signal timings to minimize delays and enhance traffic flow efficiency. Results show marked improvements in reducing waiting times and increasing throughput, showcasing the potential of RL-based solutions for modern traffic management.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">Campus Recruitment Management System Using Oracle SQL</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Sep 2024 - Nov 2024 · 3 mos</h4>
-                                <BR>
-                                    <a href="https://github.com/ajjay0604/Campus-Recruitment-System" class="btn btn2" id="inpw" target="_blank">VIEW GITHUB</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp; SQL, ORACLE Database and ORACLE SQL</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">This project focuses on optimizing urban traffic signal systems using Reinforcement Learning (RL) to address dynamic traffic flow challenges.</span><span class="dots">.. </span><span class="more-text"> By simulating traffic scenarios in Pygame, it combines a Random Forest Classifier for initial traffic predictions with Q-learning for adaptive and continuous signal optimization. Leveraging real-time and historical traffic data, the system dynamically adjusts signal timings to minimize delays and enhance traffic flow efficiency. Results show marked improvements in reducing waiting times and increasing throughput, showcasing the potential of RL-based solutions for modern traffic management.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">DevLab : Innovative Code Evaluation and Learning Experience</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Aug 2024 - Nov 2024 · 4 mos</h4>
-                                <BR>
-                                    <a href="https://drive.google.com/file/d/1d-5iTWqCmydM4oy1DOnO6GAFOIaSz9yw/view?usp=sharing" class="btn btn2" id="inpw" target="_blank">VIEW REPORT</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Amazon Web Services (AWS) and Full-Stack Development</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">I collaborated with my team to develop DevLab, an Ed-Tech Web Development Learning Platform designed to offer interactive, scalable, and personalized learning experiences.</span><span class="dots">.. </span><span class="more-text"> Leveraging AWS services, we ensured secure and efficient delivery of resources. My primary contributions focused on setting up DynamoDB for scalable storage of learning materials and user data, and utilizing AWS Amplify for seamless hosting and deployment of the platform. Together, we built a robust, future-ready system that integrates real-time coding challenges, personalized recommendations, and advanced analytics to enhance the learning journey.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">Flappy Bird Game - Leaderboard Component Development</h3>
-                                <h4 class="proj_h2">Associated with CodeChef VIT-Chennai Chapter</h4>
-                                <h4>Jun 2024 - Jul 2024 · 2 mos</h4>
-                                <BR>
-                                    <a href="https://flappy-bird-bay-delta.vercel.app/" class="btn btn2" id="inpw" target="_blank">VIEW GAME</a> &nbsp;&nbsp;
-                                    <BR class="llklaow">
-                                    <a href="https://github.com/ajjay0604/Flappy-Bird" class="btn btn2" id="inpw" target="_blank">VIEW GITHUB</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Front-End Development, React.js and Tailwind CSS</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">Collaborated with a team to develop the Flappy Bird game.</span><span class="dots">.. </span><span class="more-text"> Contributed to the front-end development of the leaderboard component, which displays player rankings dynamically. Designed and implemented features like a scrolling scoreboard and designated chart for the top three players. Ensured responsive design and user-friendly aesthetics to enhance the gaming experience.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">News Aggregator Website with Dynamic Personalized Feeds Built Using MERN Stack</h3>
-                                <h4 class="proj_h2">Associated with ETHNUS MERN Internship</h4>
-                                <h4>Jun 2024 - Jul 2024 · 1 mo</h4>
-                                <BR>
-                                    <a href="https://news-aggregator-frontend-six.vercel.app/" class="btn btn2" id="inpw" target="_blank">VIEW WEBPAGE</a> &nbsp;&nbsp;
-                                    <BR class="llklaow">
-                                    <a href="https://github.com/ajjay0604/News-Aggregator-using-MERN-Stack" class="btn btn2" id="inpw" target="_blank">VIEW GITHUB</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;MERN Stack and Full-Stack Development</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">This project presents a News Aggregator web application built with the MERN stack, featuring user authentication, personalized feeds, and real-time updates.</span><span class="dots">.. </span><span class="more-text"> The backend, developed with Node.js and Express, connects to MongoDB Atlas for user data and preferences. The React-based frontend includes a responsive Dashboard displaying news by user-selected categories and languages, dark mode, and translation features. The app ensures secure authentication and enhances user experience with a streamlined interface and loading animation during login.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">Heart Rate Monitoring With Built-In GPS Module</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Jan 2024 - Mar 2024 · 3 mos</h4>
-                                <BR>
-                                    <a href="https://drive.google.com/file/d/1e9zCjIiHXE2uD57KYjwyt2dXxyYpkbXI/view?usp=sharing" class="btn btn2" id="inpw" target="_blank">VIEW POSTER</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Arduino, Circuit Design and Internet of Things (IoT)</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">This project introduces a smartwatch designed for continuous heart rate monitoring and emergency notification via SMS.</span><span class="dots">.. </span><span class="more-text"> Integrated with a GSM module, the device sends real-time alerts when detecting abnormal heart rate fluctuations beyond preset thresholds. Additionally, the smartwatch displays XYZ coordinates and pulse rate on an OLED screen, providing users with vital health information at a glance. This innovative solution offers a compact and effective means of personal health monitoring and emergency communication, with potential applications in healthcare, fitness, and safety.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            <div class="boxexpp">
-                                <h3 class="proj_h">IoT-Driven Smart Irrigation with Moisture-Dependent Pump Control for Sustainable Agriculture</h3>
-                                <h4 class="proj_h2">Associated with Vellore Institute of Technology</h4>
-                                <h4>Aug 2023 - Nov 2023 · 4 mos</h4>
-                                <BR>
-                                    <a href="https://drive.google.com/file/d/13gAJEbiOKLCFNByOcxw_fN22vAtV_M8b/view?usp=sharing" class="btn btn2" id="inpw" target="_blank">VIEW REPORT</a>
-                                    <br><br>
-                                    <br class="brk">
-                                    <h4 class="proj_h2"> <i class="fa-solid fa-diamond"></i> &nbsp;&nbsp;Raspberry Pi, ESP32 Microcontrollers and Circuit Design</h4><br>
-                                <p class="description pub-desc">
-                                    <span class="short-text">This project focuses on addressing the challenges of water scarcity and unpredictable weather patterns in agriculture.</span><span class="dots">.. </span><span class="more-text"> The system utilizes IoT technology to optimize irrigation by integrating soil moisture sensors, threshold-based automation, and real-time rainfall forecasts. Data is transmitted to a cloud platform, enabling intuitive manual and automated pump control.</span>
-                                </p>
-                                <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                            </div>
-                            <br>
-                            
-                            
-                        </div>
-                    </section>
-                </main>
-            </div>
-            </div>
-
-            <br><br>
-
-            <div class="qqww2"></div>
-            <br>
-    <div id="community">
-        <center>
-            <h2 class="ii"><span class="gg">C</span>OMMUNITY <span class="gg">W</span>ORKS</h2>
-            <br>
-            <br><br>
-        </center>
-
-        <div class="comm">
-            <div class="service">
-                <img src="./assets/beachclean.png" alt="Community Service 1" class="service-img">
-                <br id="kkll1111">
-                <div class="service-text">
-                    <center>
-                    <h3>🌍 Uniting for a Cleaner Coastline 🌊
-                    </h3></center><br>
-                    <p class="pub-desc">On September 21, 2024, I joined an amazing group of passionate volunteers at Marina Beach, Chennai for The Planet’s Largest Coastal Cleanup 🧹. Alongside my team representing Rotaract Club of VIT (Chennai Campus), we joined forces with CommuniTree and Rotaract District 3234, all committed to preserving the beauty of our beaches and protecting marine life 🐢.
-                    </p><br>
-                    <div class="more-text">
-                        <p class="pub-desc">
-                        Even though we were drenched, our spirits stayed high! 🌦️ With trash bags in hand, we combed the beach, collecting waste that would otherwise endanger our oceans 🌊. Seeing everyone rally for this cause even in challenging weather was inspiring and reaffirmed the power of community 💪💚.
-                        </p><br>
-                        <p class="pub-desc">
-                        A huge shoutout to the organizers and every volunteer who showed up! 🌟 Every small step makes a difference, and I’m proud to have contributed to this impactful movement. Here’s to more hands joining together for a sustainable, cleaner future! 🌍🌱
-                        </p>
-                    </div>
-                    <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                </div>
-            </div>
-            <br>
-            <div class="service">
-                <img src="./assets/one_walk.png" alt="Community Service 1" class="service-img" id="kkll11">
-                <div class="service-text">
-                    <center>
-                    <h3>🌸 One Walk, One Hope : Breast Cancer Awareness 🌸
-                    </h3></center><br>
-                    <p class="pub-desc">On October 27, 2024, I had the honor of joining the "One Walk, One Hope" walkathon organized by the District Rotaract Council, Rotary International District 3234, and several Rotaract Clubs in Chennai. This event, held at Island Ground, Chennai, brought together people from all walks of life, united by one mission: to raise awareness for breast cancer.
-                    </p><br>
-                    <div class="more-text">
-                        <p class="pub-desc">
-                        Breast cancer awareness is more than just wearing pink or participating in an event, it's about creating lasting impact through education, early detection, and support for those affected. This walkathon was an inspiring reminder of how powerful community support can be in promoting these crucial messages and saving lives.
-                        </p><br>
-                        <p class="pub-desc">
-                        Receiving a certificate of participation was a proud moment, but more importantly, this experience allowed me to contribute to a cause that matters deeply to so many. I am grateful to the Rotary and Rotaract organizations for making events like these possible and for fostering a sense of responsibility and compassion in our communities. <br><br> Together, we can make a difference. 💪💖
-                        </p>
-                    </div>
-                     <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                </div>
-                
-                <img src="./assets/one_walk.png" alt="Community Service 1" class="service-img" id="kkll111">
-            </div>
-            <br>
-    
-            <div class="service">
-                <img src="./assets/5k_run1.png" alt="Community Service 1" class="service-img">
-                <br id="kkll1111">
-                <div class="service-text">
-                    <center>
-                    <h3>🌟 Ran for Quality 🏃‍♂️🏃‍♀️ 🌟
-                    </h3></center><br>
-                    <p class="pub-desc">Thrilled to have participated in the "Run for Quality" 5K run organized by the Bureau of Indian Standards (BIS), Chennai on November 10, 2024! 🎉
-                    </p><br>
-                    <div class="more-text">
-                        <p class="pub-desc">
-                        It was an incredible experience being part of this meaningful initiative that emphasizes standards and consumer safety. 📏&nbsp;✅ Together, we ran not just for fitness but to support a cause that impacts our daily lives.
-                        </p>
-                        <p class="pub-desc">
-                        The energy, enthusiasm, and commitment of everyone present were truly inspiring! 🫶 A big shoutout to BIS for hosting such a well-organized event. 🙌
-                            <br><br>
-                            Let’s continue to work towards promoting quality in every aspect of life! 💡
-                        </p>
-                    </div>
-                     <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                </div>
-            </div>
-
-            <br>
-            <div class="service">
-                <img src="./assets/Beasant_Beach_Clean.png" alt="Community Service 1" class="service-img" id="kkll11">
-                <div class="service-text">
-                    <center>
-                    <h3>🌊 Beach Cleanup Drive at<br class="pqqls"> Elliot's Beach 🌴
-                    </h3></center><br>
-                    <p class="pub-desc">On 12th January 2025, I had the privilege of participating in 🌟 Kadal Karai - Season 2, Episode 1, a beach cleanup drive organized by the Rotaract Club of VIT Chennai and supported by the Rotary Club of Chennai.
-                    </p><br>
-                    <div class="more-text">
-                        <p class="pub-desc">
-                        🏖️ Held at Elliot’s Beach (near Ashtalakshmi Temple) from 6:45 AM to 9:00 AM, the event gathered enthusiastic day scholars united by a shared mission to make a positive environmental impact. We worked together to remove litter, ensuring the beach was left cleaner and safer for both visitors and marine life. The effort highlighted the importance of community participation in preserving natural spaces.
-                        </p><br>
-                        <p class="pub-desc">
-                        During the cleanup, we worked collectively to remove litter and debris scattered across the beach, ensuring the area was left cleaner, more presentable, and safer for visitors and marine life alike. The effort was not only about cleaning up but also about spreading awareness of the growing importance of protecting natural spaces and taking responsibility for environmental sustainability.
-                        </p><br>
-                        <p class="pub-desc">
-                        I’m grateful to have been part of this meaningful initiative and look forward to participating in more such activities in the future.
-                        </p>
-                    </div>
-                     <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                </div>
-                
-                <img src="./assets/Beasant_Beach_Clean.png" alt="Community Service 1" class="service-img3" id="kkll111">
-            </div>
-
-            <br>
-    
-            <div class="service">
-                <img src="./assets/run_img_cancer.jpg" alt="Community Service 1" class="service-img">
-                <br id="kkll1111">
-                <div class="service-text">
-                    <center>
-                    <h3>🏃‍♂️🏃‍♀️ Returning Strong : Chennai Cancer Awareness Run 2025 🏃‍♂️🏃‍♀️
-                    </h3></center><br>
-                    <p class="pub-desc">On February 2nd, 2025, I had the privilege of participating in the 3rd Edition of the K10K Cancer Awareness Run held at Olcott Memorial School, Besant Nagar, Chennai, alongside my friend Allen. This event was not just a run, it was a heartfelt movement to spread awareness about cancer and to raise funds for treatments for the underprivileged.
-                    </p><br>
-                    <div class="more-text">
-                        <p class="pub-desc">
-                        Cancer affects countless lives, and early detection is crucial for survival. Events like this emphasize the importance of timely diagnosis and the collective responsibility we all share in fighting this disease. Whether it was the 5K or 10K, every step taken that day was a step towards hope and change.
-                        </p><br>
-                        <p class="pub-desc">
-                        A big thank you to Kauvery Cancer Institute and Kauvery Hospital for organizing such an impactful event. The energy and commitment of everyone who participated were truly uplifting.
-                            <br><br>
-                            Let’s continue to run for a good cause, support cancer research, and stand strong together. 💪💖💡
-                        </p>
-                    </div>
-                     <a href="javascript:void(0);" class="read-more-btn" onclick="toggleContent(this)">Read More</a>
-                </div>
-            </div>
-
-            <br>
-        </div>
-            
-    </div>
-   <br><br> 
-
-    <div id="contact">
-        <center>
-            <h2 class="ii"><span class="gg">C</span>ONTACT</h2>
-            <br id="lllllo">
-            <br id="lllllo">
-        </center>
-        <div class="container">
-            <div class="row" id="oollllll">
-                
-                <div class="contact-left">
-                    <br  id="lllllo"><br  id="lllllo"><br  id="lllllo">
-                    <br  id="lllllo">
-                    <p class="ilil"><i class="fa-solid fa-envelope"></i>ajayadi2005.aa@gmail.com</p>
-
-                   
-                    <br>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/ajjay.fr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/ajjay-adhithya-v-218716272/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/ajjay0604" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://scholar.google.com/citations?user=rs2ZdjwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
-                        <a href="https://www.researchgate.net/profile/Ajjay-Adhithya-Venkatesh" class="icon-rounded" target="_blank"><i class="fa-brands fa-researchgate"></i></a>
-                        <a href="https://orcid.org/0009-0004-0197-6811" class="icon-rounded" target="_blank"><i class="fa-brands fa-orcid"></i></a>
-                    </div>
-                    <br>
-                    <br>
-                    <a href="./assets/AJJAY_ADHITHYA_RESUME.pdf" download class="btn btn2" id="inpw">DOWNLOAD CV</a>
-                </div>
-                <br>
-                <br>
-                <h2 id="msgme">DROP ME A LINE</h2>
-                <br>
-                <div class="contact-right">
-                    <form name="contact-form" id="contactForm">
-                        <input type="text" name="from_name" placeholder="Your Name" required>
-                        <input type="email" name="from_email" placeholder="Your E-mail" required>
-                        <input type="text" name="occupation" placeholder="Your Occupation">
-                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <center>
-                            <br>
-                            <button type="submit" class="btnn2" id="submitBtn">SUBMIT</button>
-                        </center>
-                    </form>
-                    <br>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br id="lllllo">  <br id="lllllo">   
-    <div class="copyright">
-        <p>Copyright &copy; 2025 Ajjay Adhithya V</p>
+    <div class="modal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-description"></p>
+        <p class="modal-tags"></p>
+      </div>
     </div>
 
-    <script>
-        emailjs.init('Isu5yuD0jGkUYfNJU'); // Replace with your actual public key
+    <div class="modal curriculum-modal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-box curriculum-modal-box" role="dialog" aria-modal="true" aria-labelledby="curriculumTitle">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <h3 id="curriculumTitle"></h3>
+        <div class="curriculum-content"></div>
+      </div>
+    </div>
 
-        const form = document.getElementById('contactForm');
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = document.getElementById('submitBtn');
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'SENDING...';
-            msg.innerHTML = "Establishing Connection !!!";
-            msg.style.color = "#007bff";
-            
-            emailjs.sendForm(
-                'service_phswhql',
-                'template_76rniif',
-                form
-            )
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                msg.innerHTML = "Message Sent Successfully!";
-                msg.style.color = "#28a745";
-                form.reset();
-                
-                setTimeout(function(){
-                    msg.innerHTML = "";
-                }, 5000);
-            })
-            .catch(function(error) {
-                console.log('FAILED...', error);
-                msg.innerHTML = "Failed to send message. Please try again.";
-                msg.style.color = "#dc3545";
-                
-                setTimeout(function(){
-                    msg.innerHTML = "";
-                }, 5000);
-            })
-            .finally(function() {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'SUBMIT';
-            });
-        });
-
-        var sm = document.getElementById("sidemenu");
-        function openmenu(){
-            sm.style.right = "0px";
-        }
-
-        function closemenu(){
-            sm.style.right = "-200px";
-        }
-
-        // --- SCRIPT FOR READ MORE (PROJECTS & COMMUNITY) ---
-        function toggleContent(btn) {
-            const parent = btn.parentElement;
-            const moreContent = parent.querySelector('.more-text');
-            const dots = parent.querySelector('.dots');
-
-            moreContent.classList.toggle('expanded');
-
-            if (moreContent.classList.contains('expanded')) {
-                if (dots) dots.style.display = 'none';
-                btn.textContent = 'Read Less';
-            } else {
-                if (dots) dots.style.display = 'inline';
-                btn.textContent = 'Read More';
-            }
-        }
-      </script>
-    
-</body>
+    <script src="./main.js" defer></script>
+  </body>
 </html>
