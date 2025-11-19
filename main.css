@@ -708,6 +708,7 @@ main > section {
   line-height: 1.7;
   position: relative;
   z-index: 1;
+
 }
 
 .tech-card {
@@ -1769,5 +1770,44 @@ main > section {
   /* Optional: Reduce section padding to give content more breathing room */
   .hero-grid {
     padding: 24px; 
+  }
+}
+
+
+/*PERFORMANCE IMPROVEMENTS FOR MOBILE DEVICES*/
+
+/* PERFORMANCE OPTIMIZATIONS FOR MOBILE */
+@media (max-width: 768px) {
+  /* 1. Kill the heavy blur filters */
+  *, *::before, *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 2. Make backgrounds solid/darker to compensate for lack of blur */
+  .nav-shell {
+    background: rgba(2, 3, 10, 0.98) !important;
+    border-bottom: 1px solid #333;
+  }
+  
+  .card, .education-card, .tech-card, .publication-card, 
+  .community-item, .hero-grid, .education-summary, .tech-summary {
+    background: #0f172a !important; /* Solid dark color */
+  }
+
+  .tech-chip, .pub-meta, .education-badge {
+    background: rgba(159, 180, 255, 0.1) !important;
+  }
+
+  /* 3. Stop infinite animations */
+  .card.accent::after,
+  .tech-summary::after {
+    animation: none !important;
+    display: none !important;
+  }
+
+  /* 4. Remove heavy shadows */
+  .hero-grid, .card, .education-card, .tech-card, .publication-card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important;
   }
 }
