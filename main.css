@@ -141,8 +141,7 @@ main > section {
   transition: color var(--transition);
 }
 
-.nav a:hover,
-.nav a:focus {
+.nav a:hover {
   color: var(--primary);
 }
 
@@ -385,6 +384,130 @@ main > section {
   }
   50%, 100% {
     transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+/* --- Recommendations / Cue Cards --- */
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.rec-card {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(159, 180, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.rec-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(159, 180, 255, 0.5);
+  box-shadow: 0 16px 48px rgba(159, 180, 255, 0.15);
+}
+
+/* Giant Quote Icon Background */
+.rec-icon {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: 8rem;
+  line-height: 1;
+  color: rgba(159, 180, 255, 0.05); /* Very subtle watermark */
+  font-family: var(--font-display);
+  pointer-events: none;
+  user-select: none;
+}
+
+.rec-text {
+  position: relative;
+  z-index: 1;
+  font-size: 1.07rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 24px 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Highlight emphasis within quotes */
+.rec-text em {
+  color: var(--primary);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.rec-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(159, 180, 255, 0.15);
+}
+
+/* UPDATED: Flex display to align name and icon */
+.rec-author-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: var(--font-display);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* NEW: Profile Link Styling */
+.rec-profile-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.rec-profile-link:hover {
+  color: var(--primary);
+  transform: translateY(-2px) translateX(2px); /* Subtle movement */
+  opacity: 1;
+}
+
+.rec-author-info span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.rec-author-info small {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Mobile Optimization for Rec Cards */
+@media (max-width: 768px) {
+  .rec-card {
+    background: #0f172a !important; 
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+  .rec-card:hover {
+    transform: none !important;
   }
 }
 
@@ -1849,4 +1972,61 @@ main > section {
     border-radius: 8px !important;
     box-shadow: none !important;
   }
+}
+
+/* --- Navbar Fixes --- */
+
+/* 1. Allow the navbar to stretch full width */
+.nav-bar {
+  max-width: 100% !important; /* Overrides the 1200px limit */
+  padding: 16px 40px; /* Gives it nice breathing room on the edges */
+}
+
+/* 2. Stop your name from breaking into two lines */
+.logo strong {
+  white-space: nowrap;
+}
+
+.logo small {
+  white-space: nowrap;
+}
+
+/* 3. Adjust spacing between links slightly so they fit better */
+.nav ul {
+  gap: 22px; /* Reduced slightly from 28px to fit everything nicely */
+}
+
+/* Ensure the logo container doesn't get squashed */
+.logo {
+  flex-shrink: 0; 
+}
+
+/* Adjust spacing between navigation links */
+.nav ul {
+  gap: 32px !important; /* Increased from 22px for a cleaner, wider look */
+}
+
+/* --- Active Navigation State (Scrollspy) --- */
+/* --- Navigation Link Styling --- */
+
+.nav a {
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: color 220ms ease, text-shadow 220ms ease;
+  /* Removes the default blue outline on click */
+  outline: none; 
+}
+
+/* 1. Hover State (Removed :focus so clicks don't stick) */
+.nav a:hover {
+  color: var(--primary);
+}
+
+/* 2. Active State (Controlled by JS Scrollspy) */
+.nav a.active {
+  color: var(--primary) !important;
+  /* The "Light" Glow Effect */
+  text-shadow: 0 0 15px rgba(159, 180, 255, 0.6); 
+  font-weight: 700;
 }
