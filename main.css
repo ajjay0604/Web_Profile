@@ -1737,3 +1737,37 @@ main > section {
     white-space: nowrap; /* Prevents text from wrapping to a new line */
   }
 }
+
+
+/* Mobile Specific Adjustments (Add to bottom of CSS) */
+@media (max-width: 480px) {
+  
+  /* 1. Fix the Name (Reduce size and force 1 line) */
+  .hero-copy h1 {
+    font-size: 1.75rem; /* Significantly smaller for mobile */
+    white-space: nowrap; /* Forces text to stay on one line */
+    margin-bottom: 8px;
+  }
+
+  /* 2. Fix the Buttons (Force same line) */
+  .hero-actions {
+    flex-wrap: nowrap; /* Prevents stacking */
+    gap: 8px;          /* Smaller gap between buttons */
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    flex: 1;           /* Makes both buttons share width equally (50/50) */
+    padding: 10px 0;   /* Reduces side padding to make text fit */
+    font-size: 0.8rem; /* Slightly smaller text */
+    white-space: nowrap; /* Prevents button text from wrapping */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Optional: Reduce section padding to give content more breathing room */
+  .hero-grid {
+    padding: 24px; 
+  }
+}
