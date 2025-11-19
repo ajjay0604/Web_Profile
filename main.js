@@ -404,3 +404,53 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             console.log('FAILED...', err);
         });
 });
+
+/* ----------------------------------- */
+/* BETTER SCROLLSPY (Intersection Observer) */
+/* ----------------------------------- */
+
+
+// We use unique variable names (spySections, spyLinks) to avoid errors
+const spySections = document.querySelectorAll("section");
+const spyLinks = document.querySelectorAll(".nav ul li a");
+
+const observerOptions = {
+  root: null,
+  // This focuses the detection on the middle of the screen
+  // The light changes when the section hits the middle 30% zone
+  rootMargin: "-30% 0px -30% 0px", 
+  threshold: 0
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Get the ID of the section currently in the middle of the screen
+      const currentId = entry.target.getAttribute("id");
+      
+      // Update the Navbar
+      spyLinks.forEach((link) => {
+        // 1. Turn off light for everyone
+        link.classList.remove("active");
+        
+        // 2. Turn on light ONLY for the matching section
+        if (link.getAttribute("href") === `#${currentId}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}, observerOptions);
+
+// Start observing all sections
+spySections.forEach((section) => {
+  observer.observe(section);
+});
+
+// CLICK FIX: Force the browser to 'let go' of the link after clicking
+// This prevents the "sticky" color issue
+spyLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    link.blur(); 
+  });
+});
