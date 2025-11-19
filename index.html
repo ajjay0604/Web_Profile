@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Ajjay Adhithya V · Portfolio</title>
-
     <meta
       name="description"
       content="Portfolio of Ajjay Adhithya V — modern projects, research, experience, and contact"
@@ -18,6 +17,7 @@
     />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <header class="nav-shell" id="home">
@@ -711,7 +711,7 @@
             </div>
             <a class="btn solid full" href="assets/AJJAY_ADHITHYA_RESUME.pdf" download>Download CV</a>
           </div>
-          <form class="card contact-form" action="https://formspree.io/f/mqkrjvbb" method="POST">
+          <form class="card contact-form" id="contact-form">
             <label>
               Name
               <input type="text" name="name" placeholder="Your name" required />
@@ -728,7 +728,7 @@
               Message
               <textarea name="message" rows="4" placeholder="How can I help?" required></textarea>
             </label>
-            <button class="btn solid" type="submit">Send Message</button>
+            <button class="btn solid" type="submit" id="submit-btn">Send Message</button>
           </form>
         </div>
       </section>
