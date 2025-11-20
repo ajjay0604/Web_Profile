@@ -45,6 +45,7 @@
             <li><a href="#publications">Publications</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Achievements</a></li>
             <li><a href="#community">Community</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -633,7 +634,7 @@
                 <p class="meta">Web Apps · 2024</p>
                 <h3>News Aggregator with Personalized Feeds</h3>
                 <p>MERN stack app with curated feeds, language filters, dark mode, and auth.</p>
-                <div class="badge-row"><span>MERN</span><span>Dark Mode</span></div>
+                <div class="badge-row"><span>MERN</span><span>Node JS</span></div>
                 <div class="project-links">
                   <a href="https://news-aggregator-frontend-six.vercel.app/" target="_blank" rel="noopener" class="btn-link">Demo</a>
                   <a href="https://github.com/ajjay0604/News-Aggregator-using-MERN-Stack" target="_blank" rel="noopener" class="btn-link github-link">GitHub</a>
@@ -676,6 +677,99 @@
           </div>
         </div>
       </section>
+
+      
+      <section class="section" id="awards">
+        <div class="section-head">
+          <p>Achievements</p>
+          <h2>Honors & Awards</h2>
+        </div>
+        
+        <div class="awards-grid">
+          <article class="award-card">
+            <div class="award-icon">🏆</div>
+            <div class="award-content">
+              <span class="award-date">Oct 2025</span>
+              <h3>Certificate of Presentation – ICSCN 2025</h3>
+              <p class="award-issuer">IEEE & Bharat Niketan Engineering College</p>
+              <p class="award-desc">
+                Presented the research paper "Trade-Offs in AI-Text Detection" at the International Conference on Sustainable Communication Networks and Application.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/ICSCN Presentation Certificate.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="award-card">
+            <div class="award-icon">📜</div>
+            <div class="award-content">
+              <span class="award-date">Oct 2025</span>
+              <h3>Certificate of Reviewing</h3>
+              <p class="award-issuer">Journal of Engineering Research and Reviews</p>
+              <p class="award-desc">
+                Awarded for serving as a reviewer and contributing to the peer-review process by reviewing one manuscript in 2025.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/Reviewed Journal Paper Certificate.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="award-card">
+            <div class="award-icon">🏆</div>
+            <div class="award-content">
+              <span class="award-date">Jul 2025</span>
+              <h3>Certificate of Presentation – ICCMC 2025</h3>
+              <p class="award-issuer">IEEE & Surya Engineering College</p>
+              <p class="award-desc">
+                Successfully presented the paper "Transforming Road Infrastructure Management" at the 8th International Conference on Computing Methodologies.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/ICCMC Presentation Certificate.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="award-card award-hidden">
+            <div class="award-icon">🎖️</div>
+            <div class="award-content">
+              <span class="award-date">Feb 2021</span>
+              <h3>Merit for Outstanding Performance (Maths)</h3>
+              <p class="award-issuer">CBSE Board</p>
+              <p class="award-desc">
+                Secured Certificate of Merit for being among the Top 0.1 percent of successful candidates in Mathematics in Class 10.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/Class_10_Merit.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="award-card award-hidden">
+            <div class="award-icon">⚜️</div>
+            <div class="award-content">
+              <span class="award-date">Sep 2019</span>
+              <h3>Rajya Puraskar (Governor's Award)</h3>
+              <p class="award-issuer">The Bharat Scouts & Guides</p>
+              <p class="award-desc">
+                Received the prestigious Rajya Puraskar, highlighting dedication to community service, leadership, and personal development.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/Ajjay - RAJYAPURASKAR CERTIFICATE.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="award-card award-hidden">
+            <div class="award-icon">🌿</div>
+            <div class="award-content">
+              <span class="award-date">Oct 2018</span>
+              <h3>Forest Trek & Mass Cleaning Campaign</h3>
+              <p class="award-issuer">Raj Bhavan, Tamil Nadu</p>
+              <p class="award-desc">
+                Received appreciation from the Hon’ble Ex-Governor of Tamil Nadu for participation in the mass cleaning campaign at Raj Bhavan.
+              </p>
+              <button class="btn outline sm view-cert-btn" data-src="assets/Ajjay - Raj Bhavan.pdf" type="button">View Certificate</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="awards-toggle-container" style="text-align: center; margin-top: 32px;">
+            <button class="btn outline awards-toggle-btn" type="button">Show More Awards</button>
+        </div>
+      </section>
+      
 
       <section class="section" id="community">
         <div class="section-head">
@@ -825,5 +919,20 @@
     </div>
 
     <script src="./main.js" defer></script>
+
+    <div class="modal certificate-modal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-box certificate-box" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <h3 id="certTitle">Certificate Viewer</h3>
+        <div class="cert-viewer-container">
+            <iframe id="certFrame" src="" frameborder="0"></iframe>
+            <img id="certImage" src="" alt="Certificate" style="display:none;">
+        </div>
+        <div class="cert-actions">
+            <a id="downloadLink" href="#" download class="btn solid sm">Download File</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
