@@ -454,3 +454,104 @@ spyLinks.forEach((link) => {
     link.blur(); 
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  /* --- 1. AWARDS SHOW MORE / LESS LOGIC --- */
+  const awardsToggleBtn = document.querySelector('.awards-toggle-btn');
+  const hiddenAwards = document.querySelectorAll('.award-card.award-hidden');
+  let isAwardsExpanded = false;
+
+  if (awardsToggleBtn && hiddenAwards.length > 0) {
+    awardsToggleBtn.addEventListener('click', () => {
+      isAwardsExpanded = !isAwardsExpanded;
+
+      hiddenAwards.forEach((card) => {
+        if (isAwardsExpanded) {
+          card.classList.remove('award-hidden');
+          card.classList.add('award-visible');
+        } else {
+          card.classList.add('award-hidden');
+          card.classList.remove('award-visible');
+        }
+      });
+
+      awardsToggleBtn.textContent = isAwardsExpanded ? 'Show Less Awards' : 'Show More Awards';
+    });
+  }
+
+  /* --- 2. CERTIFICATE MODAL LOGIC --- */
+  const certModal = document.querySelector('.certificate-modal');
+  const certFrame = document.getElementById('certFrame');
+  const certImage = document.getElementById('certImage');
+  const certDownload = document.getElementById('downloadLink');
+  const certClose = certModal?.querySelector('.modal-close');
+  const certBackdrop = certModal?.querySelector('.modal-backdrop');
+
+  function openCertModal(fileSrc) {
+    if (!certModal) {
+      console.error("Certificate Modal not found in HTML");
+      return;
+    }
+
+    const fileExt = fileSrc.split('.').pop().toLowerCase();
+    
+    // Handle Images vs PDFs
+    if (['jpg', 'jpeg', 'png', 'webp'].includes(fileExt)) {
+      if(certImage) {
+        certImage.src = fileSrc;
+        certImage.style.display = 'block';
+      }
+      if(certFrame) certFrame.style.display = 'none';
+    } else {
+      if(certFrame) {
+        certFrame.src = fileSrc;
+        certFrame.style.display = 'block';
+      }
+      if(certImage) certImage.style.display = 'none';
+    }
+
+    if(certDownload) certDownload.href = fileSrc;
+    
+    certModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    if (!certModal) return;
+    certModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    
+    // Clear source to stop background loading
+    setTimeout(() => {
+      if(certFrame) certFrame.src = '';
+      if(certImage) certImage.src = '';
+    }, 300);
+  }
+
+  // Attach Click Event to Buttons
+  const viewBtns = document.querySelectorAll('.view-cert-btn');
+  viewBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = btn.getAttribute('data-src');
+      if (src) {
+        openCertModal(src);
+      } else {
+        console.error("No data-src found on button");
+      }
+    });
+  });
+
+  // Close Listeners
+  certClose?.addEventListener('click', closeCertModal);
+  certBackdrop?.addEventListener('click', closeCertModal);
+  
+  // Close on Escape Key
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && certModal?.classList.contains('is-open')) {
+      closeCertModal();
+    }
+  });
+
+});
