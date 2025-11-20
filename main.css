@@ -1760,6 +1760,7 @@ main > section {
 .contact-form {
   display: grid;
   gap: 16px;
+ 
 }
 
 .contact-form label {
@@ -1788,6 +1789,116 @@ main > section {
 .contact-form textarea:focus {
   outline: 2px solid var(--primary);
 }
+
+/* Status Badge */
+.contact-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(16, 185, 129, 0.1); /* Green tint */
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 6px 12px;
+  border-radius: 99px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981; /* Emerald green */
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+.status-text {
+  color: #10b981;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Description Text */
+.contact-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+  max-width: 90%;
+  text-align: justify;
+}
+
+.contact-desc strong {
+  color: var(--text); /* Highlights specific keywords */
+  font-weight: 500;
+}
+
+/* Spacing adjustments for main content */
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+/* Location Meta Data */
+.contact-meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+
+
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.meta-icon {
+  font-size: 1rem;
+  filter: grayscale(1); /* Keeps icons subtle */
+}
+
+/* Responsive fix for the meta items */
+@media (max-width: 400px) {
+  .contact-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Force Contact section to stack below 1036px */
+@media (max-width: 1036px) {
+  .contact-wrap {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Optional: Center the text alignment when stacked for a better look */
+  .contact-info {
+    text-align: left; 
+  }
+  
+  /* Optional: Ensure the content description doesn't get too wide */
+  .contact-desc {
+    max-width: 100%;
+  }
+}
+
+
 
 /* Footer */
 .site-footer {
