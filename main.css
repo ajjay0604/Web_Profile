@@ -1590,6 +1590,150 @@ main > section {
   transform: translateY(-2px);
 }
 
+/* --- Awards Section Styles --- */
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.award-card {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(159, 180, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(159, 180, 255, 0.4);
+  box-shadow: 0 12px 30px rgba(159, 180, 255, 0.1);
+}
+
+.award-icon {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.award-date {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.award-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.award-issuer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(159, 180, 255, 0.1);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.award-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+.view-cert-btn {
+  width: fit-content;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  margin-top: auto;
+}
+
+/* --- Logic for Hiding/Showing Awards --- */
+.award-hidden {
+  display: none;
+}
+
+.award-visible {
+  display: flex;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Certificate Modal Styles --- */
+.certificate-box {
+  width: 90vw;
+  max-width: 900px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #0f172a;
+}
+
+.cert-viewer-container {
+  flex: 1;
+  background: #000;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.cert-viewer-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cert-viewer-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cert-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .awards-grid { grid-template-columns: 1fr; }
+  .award-card { 
+    background: #0f172a !important; 
+    backdrop-filter: none !important; 
+    transform: none !important; 
+  }
+}
+
+
 /* Contact */
 .contact-wrap {
   align-items: stretch;
@@ -1740,7 +1884,7 @@ main > section {
 }
 
 /* Responsive */
-@media (max-width: 1330px) {
+@media (max-width: 1400px) {
   .nav ul {
     position: absolute;
     top: 72px;
@@ -2003,7 +2147,7 @@ main > section {
 
 /* Adjust spacing between navigation links */
 .nav ul {
-  gap: 32px !important; /* Increased from 22px for a cleaner, wider look */
+  gap: 25px !important; /* Increased from 22px for a cleaner, wider look */
 }
 
 /* --- Active Navigation State (Scrollspy) --- */
