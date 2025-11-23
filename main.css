@@ -387,127 +387,233 @@ main > section {
   }
 }
 
-/* --- Recommendations / Cue Cards --- */
+/* --- Recommendations / Marquee Infinite Scroll --- */
 
-.rec-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+/* The Shell: Hides overflow and positions the fade elements */
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* Mask ensures the edges fade nicely into the background */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
+/* The Track: Holds all cards and animates */
+.marquee-track {
+  display: flex;
+  gap: 28px; /* Space between cards */
+  width: max-content; /* Ensure duplicate cards sit side-by-side */
+  padding: 10px 0; /* Breathing room for hover effects */
+  
+  /* The Animation: 40s duration, continuous linear speed */
+  animation: scroll-left 40s linear infinite;
+}
+
+/* Pause animation on Hover */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* The Animation Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move exactly 50% because we duplicated the content. 
+       Once it moves 50%, the duplicate set is in the exact position 
+       of the start, creating a seamless loop. */
+    transform: translateX(calc(-50% - 14px)); /* -50% minus half the gap */
+  }
+}
+
+/* The Cards */
 .rec-card {
-  background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(159, 180, 255, 0.2);
-  border-radius: var(--radius-lg);
-  padding: 32px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  
+  /* Fixed width is required for marquee to look consistent */
+  width: 400px;
+  min-width: 400px;
+  
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(159, 180, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease;
   overflow: hidden;
 }
 
-/* Hover Effect */
+/* Hover Effect: Lift + Blue Glow */
 .rec-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   border-color: rgba(159, 180, 255, 0.5);
-  box-shadow: 0 16px 48px rgba(159, 180, 255, 0.15);
+  box-shadow: 0 12px 40px -10px rgba(159, 180, 255, 0.15);
+  z-index: 2; /* Bring hovered card to front */
 }
 
-/* Giant Quote Icon Background */
-.rec-icon {
+/* Giant Background Quote Icon */
+.rec-quote-bg {
   position: absolute;
-  top: -10px;
-  right: 20px;
+  top: -20px;
+  right: 24px;
+  font-family: var(--font-display);
   font-size: 8rem;
   line-height: 1;
-  color: rgba(159, 180, 255, 0.05); /* Very subtle watermark */
-  font-family: var(--font-display);
+  color: var(--primary);
+  opacity: 0.1;
   pointer-events: none;
-  user-select: none;
+  z-index: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.rec-card:hover .rec-quote-bg {
+  opacity: 0.2;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Text Content */
+.rec-body {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
 }
 
 .rec-text {
-  position: relative;
-  z-index: 1;
-  font-size: 1.07rem;
+  font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--text);
-  margin: 0 0 24px 0;
+  color: #e2e8f0;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
 }
 
-/* Highlight emphasis within quotes */
 .rec-text em {
   color: var(--primary);
   font-style: normal;
   font-weight: 600;
+  
 }
 
+/* Footer Section */
 .rec-footer {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
   gap: 16px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(159, 180, 255, 0.15);
+  padding-top: 24px;
+  border-top: 1px solid rgba(159, 180, 255, 0.1);
 }
 
-/* UPDATED: Flex display to align name and icon */
-.rec-author-info h4 {
-  margin: 0;
+.rec-author-meta h4 {
+  margin: 0 0 4px 0;
+  font-family: var(--font-display);
   font-size: 1.1rem;
   color: #fff;
-  font-family: var(--font-display);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  letter-spacing: -0.01em;
 }
 
-/* NEW: Profile Link Styling */
-.rec-profile-link {
-  display: inline-flex;
-  align-items: center;
-  color: var(--muted);
-  transition: color 0.2s ease, transform 0.2s ease;
-  opacity: 0.7;
-}
-
-.rec-profile-link:hover {
-  color: var(--primary);
-  transform: translateY(-2px) translateX(2px); /* Subtle movement */
-  opacity: 1;
-}
-
-.rec-author-info span {
+.rec-role {
   display: block;
   font-size: 0.85rem;
-  color: var(--primary);
-  margin-top: 4px;
   font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 2px;
 }
 
-.rec-author-info small {
+.rec-org {
   display: block;
   font-size: 0.8rem;
   color: var(--muted);
-  margin-top: 2px;
 }
 
-/* Mobile Optimization for Rec Cards */
+/* External Link Icon */
+.rec-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(159, 180, 255, 0.2);
+  color: var(--muted);
+  transition: all 0.3s ease;
+  background: rgba(159, 180, 255, 0.05);
+}
+
+.rec-link:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #0f172a;
+  transform: rotate(45deg);
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .rec-card {
-    background: #0f172a !important; 
+    /* Smaller cards on mobile */
+    width: 300px;
+    min-width: 300px;
+    padding: 24px;
+    
+    /* Performance */
     backdrop-filter: none !important;
-    box-shadow: none !important;
+    background: #0f172a !important;
   }
-  .rec-card:hover {
-    transform: none !important;
+  
+  /* Faster animation on mobile if desired, or simpler interaction */
+  .marquee-track {
+    animation-duration: 30s; 
+  }
+}
+
+/* --- Mobile: Disable Marquee & Stack Vertically (< 768px) --- */
+@media (max-width: 768px) {
+  
+  /* 1. Reset the wrapper (remove the fade edges) */
+  .marquee-wrapper {
+    mask-image: none;
+    -webkit-mask-image: none;
+    overflow: visible; /* Allow vertical scroll */
+  }
+
+  /* 2. Stop animation and stack vertically */
+  .marquee-track {
+    animation: none; /* Kill the movement */
+    display: flex;
+    flex-direction: column; /* Stack top-to-bottom */
+    width: 100%; /* Full width */
+    gap: 24px;
+    padding: 0;
+  }
+
+  /* 3. Make cards responsive width */
+  .rec-card {
+    width: 100%;
+    min-width: 0; /* Allow shrinking */
+    
+    /* Mobile Performance overrides */
+    backdrop-filter: none !important;
+    background: #0f172a !important; 
+    transform: none !important; /* No hover lift on touch */
+  }
+
+  /* 4. HIDE THE DUPLICATES 
+     Since the marquee HTML has 2 sets of cards (6 total), 
+     we hide the last 3 on mobile so the user only sees the original 3. */
+  .marquee-item:nth-child(n+4) {
+    display: none;
   }
 }
 
