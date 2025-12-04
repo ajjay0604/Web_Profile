@@ -1430,17 +1430,53 @@ main > section {
   }
 }
 
-/* Experience */
+/* =========================================
+   Timeline / Experience Section
+   ========================================= */
+
+/* 1. Container */
 .timeline {
   display: grid;
-  gap: 20px;
+  gap: 0; /* No gap so the vertical line connects seamlessly */
 }
 
+/* 2. Individual Experience Items */
 .timeline article {
   position: relative;
-  padding-left: 24px;
+  padding-left: 24px;   /* Space for the dot/line on the left */
+  padding-bottom: 48px; /* Adds space between items while keeping the line connected */
 }
 
+/* Typography adjustments for the timeline */
+.timeline h3 {
+  margin-top: 0;
+  padding-top: 2px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.timeline span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* 3. The Vertical Line */
+.timeline article::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 22px;
+  width: 2px;
+  height: 100%; /* Spans the full height including the bottom padding */
+  background: var(--border);
+}
+
+/* Hide the line for the very last item */
+.timeline article:last-child::after {
+  display: none;
+}
+
+/* 4. The Dot */
 .timeline article::before {
   content: '';
   position: absolute;
@@ -1450,29 +1486,15 @@ main > section {
   height: 8px;
   border-radius: 50%;
   background: var(--primary);
+  z-index: 1; /* Ensures dot sits on top of the line */
 }
 
-.timeline article::after {
-  content: '';
-  position: absolute;
-  left: 3px;
-  top: 22px;
-  width: 2px;
-  height: calc(100% + 12px);
-  background: var(--border);
-}
+/* =========================================
+   Experience Details (Accordion/Toggle)
+   ========================================= */
 
-.timeline article:last-child::after {
-  display: none;
-}
-
-.timeline h3 {
-  margin-bottom: 4px;
-}
-
-.timeline span {
-  color: var(--muted);
-  font-size: 0.9rem;
+.experience-toggle {
+  margin-top: 12px;
 }
 
 .experience-extra {
@@ -1481,6 +1503,7 @@ main > section {
   opacity: 0;
   transition: max-height 400ms ease, opacity 250ms ease, margin-top 250ms ease;
   margin-top: 0;
+  text-align: justify;
 }
 
 .experience-extra.is-open {
@@ -1488,10 +1511,43 @@ main > section {
   margin-top: 16px;
 }
 
-.experience-toggle {
-  margin-top: 12px;
+/* =========================================
+   Action Buttons (Read More / Certificate)
+   ========================================= */
+
+.experience-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
 }
 
+/* Specific styling to make both buttons identical */
+.experience-actions .btn {
+  /* Use flexbox to center text perfectly */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Fixed sizing so both buttons match */
+  min-width: 160px; /* Wide enough for "View Certificate" */
+  height: 40px;     /* Fixed height for uniformity */
+  padding: 0 16px;
+  
+  /* Typography and reset */
+  text-align: center;
+  font-size: 0.85rem;
+  white-space: nowrap; /* Prevents text from breaking into two lines */
+}
+
+/* Mobile Responsiveness for Buttons */
+@media (max-width: 480px) {
+  .experience-actions .btn {
+    flex: 1; /* Buttons stretch to fill width on small screens */
+    width: 100%;
+    min-width: 0; /* Allow shrinking if needed */
+  }
+}
 /* Projects */
 .filter-row {
   display: flex;
