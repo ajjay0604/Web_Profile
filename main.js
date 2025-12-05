@@ -8,6 +8,55 @@ navToggle?.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
+/* =========================================
+   Typewriter Effect
+   ========================================= */
+const typeText = document.querySelector('.typewriter-text');
+const phrases = [
+  "a Coder", 
+  "a Full-Stack Developer", 
+  "a Researcher in AI", 
+  "a Community Impact Maker",
+  "a Tech Enthusiast",
+  "an Automobile Aficionado",
+  "a Mathematics Geek"
+];
+
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function typeWriter() {
+  if (!typeText) return;
+
+  const currentPhrase = phrases[phraseIndex];
+  
+  if (isDeleting) {
+    typeText.textContent = currentPhrase.substring(0, charIndex - 1);
+    charIndex--;
+    typeSpeed = 50; // Deleting is faster
+  } else {
+    typeText.textContent = currentPhrase.substring(0, charIndex + 1);
+    charIndex++;
+    typeSpeed = 100; // Typing speed
+  }
+
+  if (!isDeleting && charIndex === currentPhrase.length) {
+    isDeleting = true;
+    typeSpeed = 2000; // Pause at end of word
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+    typeSpeed = 500; // Pause before new word
+  }
+
+  setTimeout(typeWriter, typeSpeed);
+}
+
+// Start the animation when DOM loads
+document.addEventListener('DOMContentLoaded', typeWriter);
+
 navLinks.forEach((link) =>
   link.addEventListener('click', (event) => {
     const href = link.getAttribute('href');
@@ -555,3 +604,56 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* =========================================
+   Number Counter Animation
+   ========================================= */
+function initCounters() {
+  const statsSection = document.querySelector('#stats-counter');
+  if (!statsSection) return;
+
+  const options = {
+    threshold: 0.5, // Trigger when 50% of the element is visible
+    rootMargin: "0px"
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      // Select all counters inside the section
+      const counters = entry.target.querySelectorAll('.counter');
+      
+      counters.forEach(counter => {
+        // Reset to 0 in case of re-animation (optional)
+        counter.innerText = '0'; 
+        
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          
+          // Determine speed: Higher divisor = slower speed
+          // We use target / 50 so all numbers finish at roughly the same time
+          const increment = target / 50; 
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 60); // Run every 30ms
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+
+      // Stop observing after animation runs once
+      observer.unobserve(entry.target);
+    });
+  }, options);
+
+  observer.observe(statsSection);
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initCounters);
