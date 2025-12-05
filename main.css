@@ -19,7 +19,6 @@
   --primary-soft: rgba(159, 180, 255, 0.18);
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -166,6 +165,115 @@ main > section {
 }
 
 /* Hero */
+
+/* --- 1. Gradient Shimmer for Name --- */
+.animate-text {
+  background: linear-gradient(
+    to right, 
+    #f5f7ff 0%, 
+    #9fb4ff 20%, 
+    #667eea 40%, 
+    #f5f7ff 80%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* --- 2. Typewriter Cursor --- */
+.typewriter-text {
+  color: var(--primary);
+  font-weight: 600;
+  position: relative;
+}
+
+.typewriter-text::after {
+  content: '|';
+  position: absolute;
+  right: -8px;
+  color: var(--text);
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* --- 3. Scroll Down Indicator --- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+}
+
+.mouse {
+  width: 26px;
+  height: 40px;
+  border: 2px solid var(--muted);
+  border-radius: 20px;
+  position: relative;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg);
+  animation: arrow 1.5s infinite;
+  animation-delay: 0.2s; /* Sync with wheel */
+}
+
+@keyframes scroll {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  100% { transform: translate(-50%, 12px); opacity: 0; }
+}
+
+@keyframes arrow {
+  0% { transform: rotate(45deg) translate(0, 0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: rotate(45deg) translate(4px, 4px); opacity: 0; }
+}
+
+/* Adjust Hero Grid to accommodate the absolute positioned scroll icon */
+.hero-grid {
+  position: relative; 
+  padding-bottom: 60px; /* Make space for the mouse */
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -262,6 +370,60 @@ main > section {
 
 .hero-stats strong {
   font-size: 1.4rem;
+}
+
+/* --- Counter Stats Styling --- */
+
+/* Ensure the stats container handles items evenly */
+.hero-stats {
+  /* Keep your existing grid settings, just ensuring alignment */
+  align-items: center;
+  justify-items: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Number Container */
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  
+  /* Cool Gradient Text Effect */
+  background: linear-gradient(135deg, #fff 20%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-item p {
+  margin: 6px 0 0 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Mobile Adjustments for the new counters */
+@media (max-width: 601px) {
+  .stat-number {
+    font-size: 1.4rem; /* Smaller on mobile */
+  }
+  .stat-item p {
+    font-size: 0.7rem;
+    white-space: normal; /* Allow text to wrap if needed */
+    line-height: 1.2;
+  }
 }
 
 /* Cards / Grid */
