@@ -257,6 +257,12 @@ main > section {
   animation-delay: 0.2s; /* Sync with wheel */
 }
 
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
+
 @keyframes scroll {
   0% { transform: translate(-50%, 0); opacity: 1; }
   100% { transform: translate(-50%, 12px); opacity: 0; }
@@ -424,6 +430,8 @@ main > section {
     white-space: normal; /* Allow text to wrap if needed */
     line-height: 1.2;
   }
+
+
 }
 
 /* Cards / Grid */
@@ -2432,7 +2440,7 @@ main > section {
 
   /* Make the labels (CGPA, Graduating, Base) smaller */
   .hero-stats p {
-    font-size: 0.7rem; 
+    font-size: 0.65rem; 
     letter-spacing: 0; /* Removes extra spacing to fit text */
   }
 
