@@ -13,7 +13,6 @@ navToggle?.addEventListener('click', () => {
    ========================================= */
 const typeText = document.querySelector('.typewriter-text');
 const phrases = [
-  "a Coder", 
   "a Full-Stack Developer", 
   "a Researcher in AI", 
   "a Community Impact Maker",
