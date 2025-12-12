@@ -637,7 +637,7 @@ function initCounters() {
 
           if (count < target) {
             counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 60); // Run every 30ms
+            setTimeout(updateCount, 15); // Run every 30ms
           } else {
             counter.innerText = target;
           }
