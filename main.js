@@ -15,7 +15,7 @@ const typeText = document.querySelector('.typewriter-text');
 const phrases = [
   "a Full-Stack Developer", 
   "a Researcher in AI", 
-  "Academic Paper Reviewer",
+  "an Academic Paper Reviewer",
   "a Community Impact Maker",
   "a Tech Enthusiast",
   "an Automobile Aficionado",
