@@ -225,6 +225,62 @@ const curriculumClose = curriculumModal?.querySelector('.modal-close');
 const curriculumBackdrop = curriculumModal?.querySelector('.modal-backdrop');
 
 const curriculumData = {
+  masters: {
+  title: 'M.Sc. Data Science & Artificial Intelligence - Curriculum',
+  content: `
+    <h4>Core Data Science & Artificial Intelligence (18 CP)</h4>
+    <ul>
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+      <li>Neural Networks: Theory and Implementation</li>
+      <li>Information Retrieval and Data Mining</li>
+      <li>Database Systems</li>
+      <li>Image Processing and Computer Vision</li>
+      <li>Automated Reasoning</li>
+    </ul>
+
+    <h4>Core Computer Science (9 CP)</h4>
+    <ul>
+      <li>Algorithms and Data Structures</li>
+      <li>Distributed Systems</li>
+      <li>Embedded Systems</li>
+      <li>Operating Systems</li>
+      <li>Software Engineering</li>
+      <li>Data Networks</li>
+      <li>Human Computer Interaction</li>
+      <li>Verification</li>
+      <li>Cryptography</li>
+      <li>Compiler Construction</li>
+    </ul>
+
+    <h4>Advanced DSAI Courses</h4>
+    <ul>
+      <li>AI Planning</li>
+      <li>Security</li>
+      <li>Stochastics 1</li>
+      <li>Stochastics 2</li>
+      <li>Mathematical Statistics</li>
+      <li>Ethics for Nerds (Data Ethics)</li>
+    </ul>
+
+    <h4>Research Components</h4>
+    <ul>
+      <li>DSAI Seminar (7 CP)</li>
+      <li>Master's Seminar (12 CP)</li>
+      <li>Master Practical Projects</li>
+      <li>Master's Thesis (30 CP)</li>
+    </ul>
+
+    <h4>Electives</h4>
+    <ul>
+      <li>Additional Informatics / DSAI Modules</li>
+      <li>Industry Internship (up to 6 CP)</li>
+      <li>Language Courses (up to 6 CP)</li>
+      <li>Soft-Skill Seminars</li>
+      <li>Teaching Assistant / Tutor Work</li>
+    </ul>
+  `
+},
   btech: {
     title: 'B.Tech Computer Science & Engineering - Curriculum',
     content: `
