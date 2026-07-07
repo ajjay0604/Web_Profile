@@ -2619,3 +2619,17 @@ main > section {
   text-shadow: 0 0 15px rgba(159, 180, 255, 0.6); 
   font-weight: 700;
 }
+
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+  }
+}
