@@ -16,7 +16,8 @@ View the deployed version @ https://ajjay0604.github.io/Web_Profile/
 
 ## 📩 Contact Me by filling the form :
 
-<img width="2220" height="1314" alt="image" src="https://github.com/user-attachments/assets/ea25f9ac-adc0-491b-af2c-51826f67b29f" />
+<img width="2880" height="1584" alt="image" src="https://github.com/user-attachments/assets/c42fedd4-d0c8-4a21-b318-740affce6ceb" />
+
 
 ----
 <i>📌 Developed by <b>Ajjay Adhithya V</b> · 🔗 More projects on my <a href="https://github.com/ajjay0604/">GitHub Profile</a></i>
