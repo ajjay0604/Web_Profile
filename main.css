@@ -1108,8 +1108,6 @@ main > section {
   line-height: 1.7;
   position: relative;
   z-index: 1;
-  text-align: justify;
-
 }
 
 .tech-card {
